@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <section className={scss.Header}>
       <div className="container">
-        <div className={scss.content}>Header</div>
+        <div className={scss.content}></div>
       </div>
     </section>
   );
