@@ -35,8 +35,8 @@ const Header = () => {
                   {el.icon}
                 </Link>
                 <div className={scss.modal}>
-                  {el.content?.map((item) => (
-                    <h4>{item}</h4>
+                  {el.content?.map((item,  index) => (
+                    <h4 key={index}>{item}</h4>
                   ))}
                 </div>
               </div>

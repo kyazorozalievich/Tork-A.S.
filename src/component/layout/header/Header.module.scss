@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: center;
   position: fixed;
+  user-select: none;
+  z-index: 99;
   .content {
     display: flex;
     align-items: center;
