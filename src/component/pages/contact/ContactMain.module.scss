@@ -1,0 +1,230 @@
+.ContactMain {
+  width: 100%;
+  height: auto;
+  background: rgb(13, 113, 162);
+  background: linear-gradient(
+    180deg,
+    rgba(13, 113, 162, 0.20444674451811973) 0%,
+    rgba(13, 113, 162, 0.08679968569459029) 35%,
+    rgba(13, 113, 162, 0.09) 100%
+  );
+  padding: 150px 0 50px 0;
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    h5 {
+      color: #1e90ff;
+      font-size: 15px;
+      font-weight: 500;
+      padding-inline: 10px;
+      padding-block: 5px;
+      border-radius: 50px;
+      background: #1e8fff1e;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    h6 {
+      font-size: 18px;
+      font-weight: 400;
+      color: dimgray;
+    }
+    .contactDetails {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 50px;
+      .companyData {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%;
+        h1 {
+          font-size: 30px;
+        }
+        h3 {
+          font-size: 20px;
+          font-weight: 500;
+          transition: 0.05s ease-in-out;
+        }
+
+        .dataBlocks {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          .block {
+            width: 200px;
+            height: 250px;
+            background: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            box-shadow: 0px 0px 5px rgba(105, 105, 105, 0.4);
+            span {
+              font-size: 25px;
+              width: 40px;
+              height: 40px;
+              background: #000;
+              border-radius: 50%;
+              color: #1e90ff;
+              background: #1e8fff1e;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: 0.05s ease-in-out;
+            }
+
+            .data {
+              display: flex;
+              align-items: start;
+              flex-direction: column;
+              gap: 5px;
+              a {
+                font-size: 15px;
+                transition: 0.05s ease-in-out;
+                border: 2px solid transparent;
+                color: dimgray;
+                &:hover {
+                  color: #1e90ff;
+                  border-bottom: 2px solid #1e90ff;
+                  transform: scale(1.05);
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+
+        .schedule {
+          width: 100%;
+          height: 250px;
+          background: white;
+          border-radius: 10px;
+          padding: 30px;
+          display: flex;
+          align-items: start;
+          gap: 20px;
+          box-shadow: 0px 0px 5px rgba(105, 105, 105, 0.4);
+          span {
+            font-size: 25px;
+            width: 40px;
+            height: 40px;
+            background: #000;
+            border-radius: 50%;
+            color: #1e90ff;
+            background: #1e8fff1e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.05s ease-in-out;
+          }
+          h6 {
+            font-size: 15px;
+          }
+          .scheduleText {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            .scheduleData {
+              display: flex;
+              align-items: start;
+              flex-direction: column;
+              gap: 5px;
+              width: 100%;
+              margin-top: 20px;
+              .day {
+                width: 100%;
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+                h4 {
+                  font-size: 15px;
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+        }
+      }
+      .inputs {
+        width: 48%;
+        height: 550px;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(105, 105, 105, 0.4);
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+        h2 {
+          font-size: 25px;
+        }
+        form {
+          width: 100%;
+          display: flex;
+          align-items: start;
+          flex-wrap: wrap;
+          gap: 20px;
+          h4 {
+            font-size: 15px;
+            font-weight: 500;
+          }
+          .inpBlock {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 5px;
+            width: 48%;
+
+            input {
+              width: 100%;
+              height: 40px;
+              padding-inline: 10px;
+              background: #a8a8d012;
+              border-radius: 10px;
+              border: 1px solid rgba(128, 128, 128, 0.205);
+            }
+          }
+          .messageBlock {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 5px;
+            width: 100%;
+            input {
+              width: 100%;
+              padding: 10px 0 120px 0;
+              padding-inline: 10px;
+              background: #a8a8d012;
+              border-radius: 10px;
+              border: 1px solid rgba(128, 128, 128, 0.205);
+            }
+          }
+          button {
+            width: 100%;
+            height: 40px;
+            margin-top: 20px;
+            background: #1e90ff;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            color: white;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
