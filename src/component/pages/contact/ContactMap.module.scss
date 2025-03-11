@@ -1,0 +1,28 @@
+.ContactMap {
+  padding-block: 50px;
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    h5 {
+      color: #1e90ff;
+      font-size: 15px;
+      font-weight: 500;
+      padding-inline: 10px;
+      padding-block: 5px;
+      border-radius: 50px;
+      background: #1e8fff1e;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    h6 {
+      font-size: 18px;
+      font-weight: 400;
+      color: dimgray;
+    }
+  }
+}
