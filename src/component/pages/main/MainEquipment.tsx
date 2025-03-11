@@ -8,11 +8,10 @@ const MainEquipment = () => {
 		<section className={scss.MainEquipment}>
 			<div className='container'>
 				<div className={scss.content}>
-					<h3>Передовые решения для заправки газом</h3>
+					<h3>Advanced Solutions for Gas Refilling</h3>
 					<p>
-						Откройте для себя наш ассортимент современного оборудования,
-						разработанного для <br /> оптимизации процессов заправки газовых
-						баллонов.
+						Explore our range of modern equipment designed to optimize gas
+						cylinder refilling processes.
 					</p>
 				</div>
 				<div className={scss.cards}>
@@ -30,12 +29,10 @@ const MainEquipment = () => {
 								<div className={scss.timer}>
 									<CiTimer />
 								</div>
-								<h5>Автоматические заправочные станции</h5>
+								<h5>Automatic Refilling Stations</h5>
 							</div>
-							<p>
-								Точные и быстрые системы с современными модулями управления.
-							</p>
-							<button>Узнать больше</button>
+							<p>Precise and fast systems with advanced control modules.</p>
+							<button>Learn More</button>
 						</div>
 					</div>
 					<div className={scss.card}>
@@ -52,12 +49,10 @@ const MainEquipment = () => {
 								<div className={scss.timer}>
 									<CiTimer />
 								</div>
-								<h5>Автоматические заправочные станции</h5>
+								<h5>Automatic Refilling Stations</h5>
 							</div>
-							<p>
-								Точные и быстрые системы с современными модулями управления.
-							</p>
-							<button>Узнать больше</button>
+							<p>Precise and fast systems with advanced control modules.</p>
+							<button>Learn More</button>
 						</div>
 					</div>
 					<div className={scss.card}>
@@ -74,12 +69,10 @@ const MainEquipment = () => {
 								<div className={scss.timer}>
 									<CiTimer />
 								</div>
-								<h5>Автоматические заправочные станции</h5>
+								<h5>Automatic Refilling Stations</h5>
 							</div>
-							<p>
-								Точные и быстрые системы с современными модулями управления.
-							</p>
-							<button>Узнать больше</button>
+							<p>Precise and fast systems with advanced control modules.</p>
+							<button>Learn More</button>
 						</div>
 					</div>
 				</div>

@@ -9,23 +9,19 @@ const MainWelcome = () => {
 				<div className={scss.content}>
 					<div className={scss.text}>
 						<h2>
-							Автоматизированные <br /> решения для заправки
-							<br /> газовых баллонов
+							Automated Solutions <br /> for Gas Cylinder Refilling
 						</h2>
 						<p>
-							Мы разрабатываем и производим высококачественное оборудование{' '}
-							<br />
-							для наполнения газовых баллонов, обеспечивая безопасность, <br />
-							эффективность и удобство использования. Наши технологии
-							соответствуют <br /> мировым стандартам и применяются в различных
-							отраслях. Мы осуществляем <br /> доставку по всему миру,
-							гарантируя надежность и долговечность нашей <br />
-							продукции. Современные технологии. Высокая надежность. <br />{' '}
-							Доставка по всему миру.
+							We develop and manufacture high-quality equipment for gas cylinder
+							refilling, ensuring safety, efficiency, and ease of use. Our
+							technologies comply with global standards and are used across
+							various industries. We provide worldwide delivery, guaranteeing
+							the reliability and durability of our products. Cutting-edge
+							technology. High reliability. Global delivery.
 						</p>
 						<div className={scss.btns}>
-							<button className={scss.btn__first}>Изучить решения</button>
-							<button className={scss.btn__second}>Связаться с нами</button>
+							<button className={scss.btn__first}>Explore Solutions</button>
+							<button className={scss.btn__second}>Contact Us</button>
 						</div>
 					</div>
 					<Image
