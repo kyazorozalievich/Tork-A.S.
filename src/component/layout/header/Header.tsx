@@ -12,6 +12,7 @@ import france from "../../assets/images/header/flag-France.png";
 import italy from "../../assets/images/header/flag-Italy.webp";
 import arabic from "../../assets/images/header/flag-Arabic.png";
 import spain from "../../assets/images/header/flag-Spain.png";
+import logo from "../../assets/images/logo.png";
 
 const Header = () => {
   const [modalCLick, setModalClick] = useState(false);
@@ -74,9 +75,9 @@ const Header = () => {
     <section className={scss.Header}>
       <div className="container">
         <div className={scss.content}>
-          <h1 onClick={() => router.push("/")}>
-            TORK<span> A.Ş.</span>
-          </h1>
+          <span onClick={() => router.push("/")}>
+            <Image src={logo} alt="" className={scss.logo} />
+          </span>
           <div className={scss.nav}>
             <Link
               href="/"
