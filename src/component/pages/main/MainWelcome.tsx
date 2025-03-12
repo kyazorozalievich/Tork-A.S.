@@ -14,7 +14,9 @@ const MainWelcome = () => {
       <div className="container">
         <div className={scss.content}>
           <div className={scss.text}>
-            <h1>Automated machines <br /> for Gas Cylinder Refilling</h1>
+            <h1>
+              Automated machines <br /> for Gas Cylinder Refilling
+            </h1>
             <p>
               We develop and manufacture high-quality equipment for gas cylinder
               refilling, ensuring safety, efficiency, and ease of use. Our
@@ -27,9 +29,17 @@ const MainWelcome = () => {
               <button className={scss.btn__second}>Contact Us</button>
             </div>
           </div>
-          <video autoPlay muted loop className={scss.video}>
-            <source src="/videos/video.mp4" type="video/mp4" />
-          </video>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/d4gYjrB2ePc?si=wW9pepetiOyF49kN"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className={scss.video}
+            
+          ></iframe>
         </div>
       </div>
     </section>
