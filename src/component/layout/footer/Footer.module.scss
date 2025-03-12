@@ -1,0 +1,108 @@
+.Footer {
+	padding: 50px 0 15px 0;
+	.content {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 40px;
+		.tork {
+			h5 {
+				font-size: 1.5rem;
+				background: linear-gradient(90deg, #00468c, #1e90ff);
+				-webkit-background-clip: text;
+				color: transparent;
+				margin-bottom: 20px;
+			}
+			p {
+				font-size: 1rem;
+				color: #333;
+			}
+		}
+		.products {
+			display: flex;
+			flex-direction: column;
+			gap: 17px;
+			h6 {
+				font-size: 1.3rem;
+				margin-bottom: 6px;
+				background: linear-gradient(90deg, #00468c, #1e90ff);
+				-webkit-background-clip: text;
+				color: transparent;
+			}
+			a {
+				font-size: 0.9rem;
+				color: #333;
+				font-weight: 500;
+				transition: all 0.5s ease-in-out;
+				&:hover {
+					color: #1e90ff;
+				}
+			}
+		}
+		.company {
+			display: flex;
+			flex-direction: column;
+			gap: 17px;
+			h6 {
+				font-size: 1.3rem;
+				background: linear-gradient(90deg, #00468c, #1e90ff);
+				-webkit-background-clip: text;
+				color: transparent;
+				margin-bottom: 6px;
+			}
+			a {
+				font-size: 0.9rem;
+				color: #333;
+				font-weight: 500;
+				transition: all 0.5s ease-in-out;
+				&:hover {
+					color: #1e90ff;
+				}
+			}
+		}
+		.contact {
+			display: flex;
+			flex-direction: column;
+			gap: 17px;
+			h6 {
+				font-size: 1.3rem;
+				background: linear-gradient(90deg, #00468c, #1e90ff);
+				-webkit-background-clip: text;
+				color: transparent;
+				margin-bottom: 6px;
+				p {
+					font-size: 1rem;
+					color: #333;
+					font-weight: 900;
+				}
+			}
+		}
+	}
+	.footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 80px;
+		padding-top: 20px;
+		h6 {
+			font-size: 0.8rem;
+			background: linear-gradient(90deg, #00468c, #1e90ff);
+			-webkit-background-clip: text;
+			color: transparent;
+			font-weight: 700;
+		}
+		.footer__links {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			a {
+				font-size: 1rem;
+				color: #333;
+				font-weight: 500;
+				transition: all 0.5s ease-in-out;
+				&:hover {
+					color: #1e90ff;
+				}
+			}
+		}
+	}
+}
