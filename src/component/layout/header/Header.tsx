@@ -72,7 +72,7 @@ const Header = () => {
   ];
 
   return (
-    <section className={scss.Header}>
+    <header className={scss.Header}>
       <div className="container">
         <div className={scss.content}>
           <span onClick={() => router.push("/")}>
@@ -138,7 +138,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </section>
+    </header>
   );
 };
 

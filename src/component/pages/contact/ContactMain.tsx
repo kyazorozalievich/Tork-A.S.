@@ -142,7 +142,7 @@ const ContactMain = () => {
                         target="_blank"
                         className={scss.instagram}
                       >
-                        <FaInstagram  />
+                        <FaInstagram />
                       </Link>
                     </div>
                   </div>
@@ -152,14 +152,10 @@ const ContactMain = () => {
                   <div className={scss.scheduleData}>
                     <div className={scss.day}>
                       <h4>Monday - Friday:</h4>
-                      <h4>8:00 AM - 6:00 PM EST</h4>
+                      <h4> 8:00 AM – 6:00 PM ET</h4>
                     </div>
                     <div className={scss.day}>
-                      <h4>Saturday:</h4>
-                      <h4>9:00 AM - 2:00 PM EST</h4>
-                    </div>
-                    <div className={scss.day}>
-                      <h4>Sunday:</h4>
+                      <h4>Saturday - Sunday:</h4>
                       <h4>Closed</h4>
                     </div>
                   </div>
@@ -168,7 +164,7 @@ const ContactMain = () => {
             </div>
             <div className={scss.inputData}>
               <div className={scss.inputs}>
-                <h2>Send Us a Message</h2>
+                <h3>Send Us a Message</h3>
                 <form onSubmit={handleSubmit(onMessage)}>
                   <div className={scss.inpBlock}>
                     <h4>Name*</h4>

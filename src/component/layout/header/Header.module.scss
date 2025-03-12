@@ -1,12 +1,12 @@
 .Header {
   width: 100%;
   height: 80px;
-  background: white;
+  background: rgba(255, 255, 255, 0.677);
+  backdrop-filter: blur(15px);
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
-  user-select: none;
   z-index: 99;
   box-shadow: 0px 0px 5px gray;
   .content {
@@ -16,6 +16,7 @@
     .logo {
       width: 180px;
       height: 50px;
+      cursor: pointer;
     }
     .nav {
       display: flex;
@@ -38,8 +39,10 @@
         display: flex;
         align-items: center;
         gap: 5px;
-        color: #1e90ff;
-        border-bottom: 2px solid #1e90ff;
+        background: linear-gradient(90deg, #00468c, #1e90ff);
+        -webkit-background-clip: text;
+        color: transparent;
+        border-bottom: 2px solid #00468c;
         transition: 0.5s ease-in-out;
         &:hover {
           transform: scale(1.05);
@@ -76,6 +79,7 @@
             color: black;
             &:hover {
               background: rgba(128, 128, 128, 0.086);
+              color: #1e90ff;
             }
           }
         }
@@ -128,6 +132,7 @@
             cursor: pointer;
             &:hover {
               background: rgba(128, 128, 128, 0.086);
+              color: #1e90ff;
             }
             h4 {
               font-size: 15px;

@@ -1,67 +1,80 @@
 .MainAdvantages {
-	padding: 140px 0 100px 0;
+  //   padding: 150px 0 100px 0;
 
-	.content {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		.right {
-			img {
-				border-radius: 50px;
-			}
-		}
-		.left {
-			h3 {
-				font-size: 40px;
-				color: #333;
-			}
-			p {
-				font-size: 1.122rem;
-				color: #333;
-				padding-bottom: 30px;
-			}
-			.left__cards {
-				display: flex;
-				align-items: center;
-				flex-wrap: wrap;
-				gap: 30px;
-			}
-			.left__card {
-				border-radius: 15px;
-				width: 280px;
-				border: none;
-				height: 250px;
-				background-color: white;
-				padding: 20px;
-				border: 1px solid white;
-				transition: 0.9s ease-in-out;
-				&:hover {
-					border: 1px solid #1e90ff;
-					box-shadow: 0px 0px 2px #1e90ff;
-				}
-				h6 {
-					font-size: 20px;
-					color: #333;
-					font-weight: 400;
-					padding: 20px 0;
-				}
-				p {
-					font-size: 1rem;
-					font-weight: 400;
-					color: grey;
-				}
-				.block {
-					border-radius: 10px;
-					font-size: 2rem;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					width: 50px;
-					height: 50px;
-					background-color: skyblue;
-					color: blue;
-				}
-			}
-		}
-	}
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      h5 {
+        color: #00468c;
+        font-size: 15px;
+        font-weight: 500;
+        padding-inline: 10px;
+        padding-block: 5px;
+        border-radius: 50px;
+        background: #1e8fff1e;
+		width: 150px;
+      }
+      h1 {
+        font-size: 40px;
+        background: linear-gradient(90deg, #00468c, #1e90ff);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      p {
+        font-size: 20px;
+        color: #333;
+        padding-bottom: 30px;
+      }
+      .left__cards {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        .left__card {
+          border-radius: 15px;
+          width: 280px;
+          border: none;
+          height: 250px;
+          background-color: white;
+          padding: 20px;
+          border: 1px solid white;
+          transition: 0.9s ease-in-out;
+          &:hover {
+            border: 1px solid #1e90ff;
+            box-shadow: 0px 0px 2px #1e90ff;
+          }
+          h6 {
+            font-size: 20px;
+            color: #333;
+            font-weight: 400;
+            padding: 20px 0;
+          }
+          p {
+            font-size: 1rem;
+            font-weight: 400;
+            color: grey;
+          }
+          .icon {
+            border-radius: 10px;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: skyblue;
+            color: #00468c;
+          }
+        }
+      }
+    }
+    .right {
+      img {
+        border-radius: 20px;
+      }
+    }
+  }
 }

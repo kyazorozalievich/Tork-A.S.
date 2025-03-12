@@ -1,8 +1,8 @@
 .ContactMain {
   width: 100%;
   height: auto;
+  padding: 150px 0 100px 0;
 
-  padding: 150px 0 50px 0;
   .content {
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@
     width: 100%;
     gap: 20px;
     h5 {
-      color: #1e90ff;
+      color: #00468c;
       font-size: 15px;
       font-weight: 500;
       padding-inline: 10px;
@@ -20,6 +20,9 @@
     }
     h1 {
       font-size: 40px;
+      background: linear-gradient(90deg, #00468c, #1e90ff);
+      -webkit-background-clip: text;
+      color: transparent;
     }
     h6 {
       font-size: 18px;
@@ -35,18 +38,17 @@
       h1 {
         font-size: 30px;
       }
+      h3 {
+        font-size: 20px;
+        font-weight: 500;
+        transition: 0.05s ease-in-out;
+      }
       .companyData {
         display: flex;
         align-items: start;
         flex-direction: column;
         gap: 20px;
         width: 50%;
-
-        h3 {
-          font-size: 20px;
-          font-weight: 500;
-          transition: 0.05s ease-in-out;
-        }
 
         .dataBlocks {
           display: flex;
@@ -70,7 +72,7 @@
               height: 40px;
               background: #000;
               border-radius: 50%;
-              color: #1e90ff;
+              color: #00468c;
               background: #1e8fff1e;
               display: flex;
               align-items: center;
@@ -89,8 +91,8 @@
                 border: 2px solid transparent;
                 color: dimgray;
                 &:hover {
-                  color: #1e90ff;
-                  border-bottom: 2px solid #1e90ff;
+                  color: #00468c;
+                  border-bottom: 2px solid #00468c;
                   cursor: pointer;
                 }
               }
@@ -114,7 +116,7 @@
             height: 40px;
             background: #000;
             border-radius: 50%;
-            color: #1e90ff;
+            color: #00468c;
             background: #1e8fff1e;
             display: flex;
             align-items: center;
@@ -147,7 +149,7 @@
                 .linkedin {
                   &:hover {
                     transform: scale(1.05);
-                    color: #1e90ff;
+                    color: #00468c;
                   }
                 }
                 .youtube {
@@ -183,7 +185,7 @@
               display: flex;
               align-items: start;
               flex-direction: column;
-              gap: 5px;
+              gap: 20px;
               width: 100%;
               margin-top: 20px;
               .day {
@@ -217,7 +219,7 @@
           align-items: start;
           flex-direction: column;
           gap: 20px;
-          h2 {
+          h1 {
             font-size: 25px;
           }
           form {
@@ -265,12 +267,23 @@
               width: 100%;
               height: 40px;
               margin-top: 20px;
-              background: #1e90ff;
+              background: linear-gradient(90deg, #00468c, #1e90ff);
+              color: white;
               border: none;
+              box-shadow: 0 4px 10px rgba(0, 70, 140, 0.3);
               border-radius: 10px;
               font-size: 15px;
               color: white;
               font-weight: 600;
+              transition: 0.5s ease-in-out;
+              &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 6px 15px rgba(0, 70, 140, 0.5);
+              }
+
+              &:active {
+                transform: scale(0.98);
+              }
             }
           }
         }
