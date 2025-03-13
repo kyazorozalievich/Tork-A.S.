@@ -1,5 +1,6 @@
 .AboutMain {
-  padding-block: 150px;
+  padding: 200px 0 100px 0;
+  
   .content {
     display: flex;
     align-items: center;
@@ -7,6 +8,7 @@
     justify-content: center;
     width: 100%;
     gap: 20px;
+
     h1 {
       font-size: 40px;
       background: linear-gradient(90deg, #00468c, #1e90ff);
@@ -16,7 +18,7 @@
     h6 {
       font-size: 18px;
       font-weight: 400;
-      color: dimgray;
+      color: #6b7280;
       width: 70%;
       text-align: center;
     }
@@ -54,7 +56,7 @@
           gap: 40px;
           width: 90%;
           h6 {
-            font-size: 15px;
+            font-size: 18px;
             font-weight: 400;
             color: dimgray;
             text-align: start;
@@ -64,7 +66,7 @@
       }
       img {
         width: 600px;
-        height: 400px;
+        height: 450px;
         border-radius: 10px;
         object-fit: cover;
       }

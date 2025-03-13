@@ -9,13 +9,12 @@ const MainPage = () => {
     <div
       style={{
         background:
-          "linear-gradient(180deg, rgba(13, 113, 162, 0.204) 0%, rgba(13, 113, 162, 0.086) 35%, rgba(13, 113, 162, 0.09) 100%)",
-        zIndex: "-2px",
+          "linear-gradient(180deg, rgba(0,70,140,0.07279408345369398) 0%, rgba(0,70,140,0.07279408345369398) 100%)",
       }}
     >
       <MainWelcome />
       <MainEquipment />
-      <MainAdvantages />
+      <MainAdvantages />  
       <MainOther />
     </div>
   );

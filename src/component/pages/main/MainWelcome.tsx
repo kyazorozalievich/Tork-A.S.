@@ -1,16 +1,40 @@
 "use client";
-import { useEffect, useState } from "react";
 import scss from "./MainWelcome.module.scss";
+import arcelik from "@/component/assets/images/logo/company-arcelik.png";
+import midea from "@/component/assets/images/logo/company-midea.png";
+import pas from "@/component/assets/images/logo/company-pas.png";
+import bauer from "@/component/assets/images/logo/company-bauer.avif";
+import coko from "@/component/assets/images/logo/company-coko.svg";
+import bsh from "@/component/assets/images/logo/company-bsh.svg";
+import bosch from "@/component/assets/images/logo/company-bosch.png";
+import vaillant from "@/component/assets/images/logo/company-vaillant.png";
+import threeM from "@/component/assets/images/logo/company-3M.png";
+import akplas from "@/component/assets/images/logo/company-akplas.png";
+import frimpeks from "@/component/assets/images/logo/company-frimpeks.png";
+import schott from "@/component/assets/images/logo/company-schott.svg";
+import spolgas from "@/component/assets/images/logo/company-spolgas.png";
+import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 const MainWelcome = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => setIsVisible(true), 200);
-  }, []);
+  const logos = [
+    arcelik,
+    midea,
+    pas,
+    bauer,
+    coko,
+    bsh,
+    bosch,
+    vaillant,
+    threeM,
+    akplas,
+    frimpeks,
+    schott,
+    spolgas,
+  ];
 
   return (
-    <section className={`${scss.MainWelcome} ${isVisible ? scss.show : ""}`}>
+    <section className={scss.MainWelcome}>
       <div className="container">
         <div className={scss.content}>
           <div className={scss.text}>
@@ -38,9 +62,20 @@ const MainWelcome = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className={scss.video}
-            
           ></iframe>
         </div>
+      </div>
+      <div className={scss.scrollLogo}>
+        <Marquee speed={50} gradient={false}>
+          {logos.map((logo, index) => (
+            <Image
+              key={index}
+              src={logo}
+              alt="Company logo"
+              className={scss.logo}
+            />
+          ))}
+        </Marquee>
       </div>
     </section>
   );

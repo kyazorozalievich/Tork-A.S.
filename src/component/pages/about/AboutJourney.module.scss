@@ -1,0 +1,90 @@
+.AboutJourney {
+  padding: 50px 0;
+  .content {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    h5 {
+      color: #00468c;
+      font-size: 15px;
+      font-weight: 500;
+      padding-block: 5px;
+      border-radius: 50px;
+      background: #1e8fff1e;
+      width: 150px;
+    }
+    h1 {
+      font-size: 40px;
+      background: linear-gradient(90deg, #00468c, #1e90ff);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    p {
+      color: #6b7280;
+      margin: 10px auto 0;
+      width: 80%;
+    }
+    .timeline {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 40px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        background: rgba(128, 128, 128, 0.268);
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .timelineItem {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        text-align: start;
+
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+          text-align: right;
+        }
+
+        .timelineContent {
+          width: 45%;
+          background: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          .year {
+            display: inline-block;
+            background: #dbeafe;
+            color: #00468c;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
+          p {
+            width: 100%;
+          }
+        }
+        .circle {
+          width: 16px;
+          height: 16px;
+          background: #00468c;
+          border-radius: 50%;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}

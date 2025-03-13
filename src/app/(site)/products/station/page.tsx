@@ -1,7 +1,5 @@
+import StationPage from "@/component/pages/products/station/StationPage";
 import React from "react";
 
-const page = () => {
-  return <div></div>;
-};
-
+const page = () => <StationPage />;
 export default page;
