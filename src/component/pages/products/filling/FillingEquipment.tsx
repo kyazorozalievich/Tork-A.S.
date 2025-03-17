@@ -5,6 +5,7 @@ import Image from "next/image";
 import { FiChevronRight } from "react-icons/fi";
 import { useRouter } from "next/navigation";
 
+
 const FillingEquipment = () => {
   const router = useRouter();
   const equipmentData = [

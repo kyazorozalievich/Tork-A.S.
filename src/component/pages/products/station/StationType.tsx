@@ -4,6 +4,8 @@ import scss from "./StationType.module.scss";
 import Image from "next/image";
 import { FiChevronRight } from "react-icons/fi";
 import { useRouter } from "next/navigation";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 const StationType = () => {
   const router = useRouter();

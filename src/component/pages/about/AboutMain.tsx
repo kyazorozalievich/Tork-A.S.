@@ -2,6 +2,9 @@
 import Image from "next/image";
 import scss from "./AboutMain.module.scss";
 import aboutImg from "../../assets/images/about/aboutHistoryImg.jpg";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+
 const AboutMain = () => {
   return (
     <section className={scss.AboutMain}>
@@ -13,9 +16,9 @@ const AboutMain = () => {
             cylinders with a commitment to precision, safety, and innovation.
           </h6>
           <div className={scss.aboutContent}>
-            <div className={scss.aboutStory}> 
+            <div className={scss.aboutStory}>
               <h5>OUR STORY</h5>
-              <h1 >Leading the Gas Industry Forward</h1>
+              <h1>Leading the Gas Industry Forward</h1>
               <div className={scss.description}>
                 <p>
                   Tork A.Ş. is a leading manufacturer of automatic machines for
