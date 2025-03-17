@@ -1,80 +1,607 @@
 .MainAdvantages {
-  //   padding: 150px 0 100px 0;
+	padding: 50px 0;
+	.content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 
-  .content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+		.left {
+			h5 {
+				color: #00468c;
+				font-size: 15px;
+				font-weight: 500;
+				padding-inline: 10px;
+				padding-block: 5px;
+				border-radius: 50px;
+				background: #1e8fff1e;
+				width: 150px;
+			}
+			h1 {
+				font-size: 40px;
+				background: linear-gradient(90deg, #00468c, #1e90ff);
+				-webkit-background-clip: text;
+				color: transparent;
+			}
+			p {
+				font-size: 20px;
+				color: #333;
+				padding-bottom: 30px;
+			}
+			.left__cards {
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				gap: 30px;
+				.left__card {
+					border-radius: 15px;
+					width: 280px;
+					border: none;
+					height: 250px;
+					background-color: white;
+					padding: 20px;
+					border: 1px solid white;
+					transition: 0.9s ease-in-out;
+					&:hover {
+						border: 1px solid #1e90ff;
+						box-shadow: 0px 0px 2px #1e90ff;
+					}
+					h6 {
+						font-size: 20px;
+						color: #333;
+						font-weight: 400;
+						padding: 20px 0;
+					}
+					p {
+						font-size: 1rem;
+						font-weight: 400;
+						color: grey;
+					}
+					.icon {
+						border-radius: 10px;
+						font-size: 2rem;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 50px;
+						height: 50px;
+						background-color: skyblue;
+						color: #00468c;
+					}
+				}
+			}
+		}
+		.right {
+			img {
+				border-radius: 20px;
+			}
+		}
+	}
+}
 
-    .left {
-      h5 {
-        color: #00468c;
-        font-size: 15px;
-        font-weight: 500;
-        padding-inline: 10px;
-        padding-block: 5px;
-        border-radius: 50px;
-        background: #1e8fff1e;
-		width: 150px;
-      }
-      h1 {
-        font-size: 40px;
-        background: linear-gradient(90deg, #00468c, #1e90ff);
-        -webkit-background-clip: text;
-        color: transparent;
-      }
-      p {
-        font-size: 20px;
-        color: #333;
-        padding-bottom: 30px;
-      }
-      .left__cards {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 30px;
-        .left__card {
-          border-radius: 15px;
-          width: 280px;
-          border: none;
-          height: 250px;
-          background-color: white;
-          padding: 20px;
-          border: 1px solid white;
-          transition: 0.9s ease-in-out;
-          &:hover {
-            border: 1px solid #1e90ff;
-            box-shadow: 0px 0px 2px #1e90ff;
-          }
-          h6 {
-            font-size: 20px;
-            color: #333;
-            font-weight: 400;
-            padding: 20px 0;
-          }
-          p {
-            font-size: 1rem;
-            font-weight: 400;
-            color: grey;
-          }
-          .icon {
-            border-radius: 10px;
-            font-size: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-            background-color: skyblue;
-            color: #00468c;
-          }
-        }
-      }
-    }
-    .right {
-      img {
-        border-radius: 20px;
-      }
-    }
-  }
+@media (max-width: 1240px) {
+	.MainAdvantages {
+		.content {
+			.left {
+				.left__cards {
+					.left__card {
+						.icon {
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 450px;
+					height: 650px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1140px) {
+	.MainAdvantages {
+		.content {
+			.left {
+				.left__cards {
+					.left__card {
+						.icon {
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 400px;
+					height: 650px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1090px) {
+	.MainAdvantages {
+		.content {
+			.left {
+				.left__cards {
+					.left__card {
+						.icon {
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 350px;
+					height: 600px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1030px) {
+	.MainAdvantages {
+		.content {
+			.left {
+				h1 {
+					font-size: 36px;
+				}
+				p {
+					font-size: 18px;
+					padding-bottom: 25px;
+				}
+				.left__cards {
+					.left__card {
+						width: 250px;
+						height: 290px;
+						padding: 16px;
+						.icon {
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 350px;
+					height: 600px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 980px) {
+	.MainAdvantages {
+		.content {
+			.left {
+				h5 {
+					width: 150px;
+					font-size: 15px;
+				}
+				.left__cards {
+					.left__card {
+						h6 {
+							font-size: 18px;
+							padding: 10px 0;
+						}
+						p {
+							font-size: 15px;
+						}
+						width: 220px;
+						height: 260px;
+						padding: 16px;
+						.icon {
+							width: 35px;
+							height: 35px;
+							font-size: 22px;
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 350px;
+					height: 600px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 910px) {
+	.MainAdvantages {
+		.content {
+			.left {
+				.left__cards {
+					gap: 15px;
+					.left__card {
+						.icon {
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 300px;
+					height: 600px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 850px) {
+	.MainAdvantages {
+		.content {
+			.left {
+				h5 {
+					width: 150px;
+					font-size: 15px;
+					padding-block: 2px;
+				}
+				h1 {
+					font-size: 30px;
+				}
+				p {
+					font-size: 15px;
+					padding-bottom: 10px;
+				}
+				.left__cards {
+					.left__card {
+						width: 190px;
+						height: 240px;
+						p {
+							font-size: 13px;
+						}
+						.icon {
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 300px;
+					height: 500px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 790px) {
+	.MainAdvantages {
+		.content {
+			.left {
+				.left__cards {
+					.left__card {
+						width: 170px;
+						height: 230px;
+						p {
+							font-size: 13px;
+						}
+						h6 {
+							padding: 5px 0;
+						}
+						.icon {
+							width: 25px;
+							height: 25px;
+							font-size: 1rem;
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 300px;
+					height: 500px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 750px) {
+	.MainAdvantages {
+		.content {
+			flex-direction: column;
+			gap: 20px;
+			.left {
+				.left__cards {
+					justify-content: space-between;
+					.left__card {
+						h6 {
+							padding: 15px 0;
+						}
+						width: 300px;
+						height: 180px;
+						.icon {
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 550px;
+					height: 500px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 695px) {
+	.MainAdvantages {
+		.content {
+			gap: 15px;
+			.left {
+				.left__cards {
+					justify-content: space-between;
+					.left__card {
+						h6 {
+							padding: 10px 0;
+						}
+						width: 290px;
+						height: 180px;
+						.icon {
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 500px;
+					height: 300px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 675px) {
+	.MainAdvantages {
+		.content {
+			gap: 12px;
+			.left {
+				.left__cards {
+					.left__card {
+						h6 {
+							padding: 10px 0;
+						}
+						width: 280px;
+						height: 190px;
+						.icon {
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 500px;
+					height: 300px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 655px) {
+	.MainAdvantages {
+		.content {
+			.left {
+				.left__cards {
+					.left__card {
+						width: 260px;
+						height: 190px;
+						.icon {
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 450px;
+					height: 290px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 615px) {
+	.MainAdvantages {
+		.content {
+			.left {
+				.left__cards {
+					.left__card {
+						width: 240px;
+						height: 190px;
+						.icon {
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 450px;
+					height: 290px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 575px) {
+	.MainAdvantages {
+		.content {
+			.left {
+				.left__cards {
+					.left__card {
+						h6 {
+							padding: 5px 0;
+						}
+						width: 230px;
+						height: 190px;
+						.icon {
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 400px;
+					height: 290px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 555px) {
+	.MainAdvantages {
+		.content {
+			.left {
+				.left__cards {
+					gap: 10px;
+					.left__card {
+						h6 {
+							padding: 5px 0;
+						}
+						p {
+							font-size: 12px;
+						}
+						width: 220px;
+						height: 180px;
+						.icon {
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 400px;
+					height: 290px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 530px) {
+	.MainAdvantages {
+		.content {
+			.left {
+				.left__cards {
+					.left__card {
+						width: 210px;
+						height: 180px;
+						.icon {
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 400px;
+					height: 290px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 510px) {
+	.MainAdvantages {
+		.content {
+			.left {
+				.left__cards {
+					.left__card {
+						width: 180px;
+						height: 200px;
+						.icon {
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 350px;
+					height: 290px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 460px) {
+	.MainAdvantages {
+		.content {
+			.left {
+				.left__cards {
+					.left__card {
+						h6 {
+							font-size: 16px;
+							padding: 5px 0;
+						}
+						p {
+							font-size: 10px;
+						}
+						width: 160px;
+						height: 170px;
+						.icon {
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 300px;
+					height: 240px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 410px) {
+	.MainAdvantages {
+		.content {
+			.left {
+				.left__cards {
+					flex-direction: column;
+					.left__card {
+						h6 {
+							font-size: 18px;
+							padding: 5px 0;
+						}
+						p {
+							font-size: 12px;
+						}
+						width: 250px;
+						height: 160px;
+						.icon {
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 250px;
+					height: 240px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 350px) {
+	.MainAdvantages {
+		.content {
+			.left {
+				.left__cards {
+					.left__card {
+						h6 {
+							font-size: 15px;
+							padding: 5px 0;
+						}
+						p {
+							font-size: 11px;
+						}
+						width: 220px;
+						height: 160px;
+						.icon {
+						}
+					}
+				}
+			}
+			.right {
+				img {
+					width: 200px;
+					height: 200px;
+				}
+			}
+		}
+	}
 }
