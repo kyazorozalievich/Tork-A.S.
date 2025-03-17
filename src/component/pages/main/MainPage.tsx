@@ -3,6 +3,7 @@ import MainWelcome from "./MainWelcome";
 import MainEquipment from "./MainEquipment";
 import MainAdvantages from "./MainAdvantages";
 import MainOther from "./MainOther";
+import Consultation from "../products/Consultation";
 
 const MainPage = () => {
   return (
@@ -14,8 +15,9 @@ const MainPage = () => {
     >
       <MainWelcome />
       <MainEquipment />
-      <MainAdvantages />  
+      <MainAdvantages />
       <MainOther />
+      <Consultation />
     </div>
   );
 };

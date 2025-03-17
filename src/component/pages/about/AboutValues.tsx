@@ -4,6 +4,7 @@ import scss from "./AboutValues.module.scss";
 import { FaRegBuilding } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { RxCountdownTimer } from "react-icons/rx";
+import Block from "../Block";
 
 const AboutValues = () => {
   const data = [
@@ -47,16 +48,12 @@ const AboutValues = () => {
           <h5>OUR VALUES</h5>
           <h1>What Drives Us</h1>
           <h6>
-            At Tork Ash, our core values guide everything we do, from product
+            At Tork A.Ş. our core values guide everything we do, from product
             development to customer relationships.
           </h6>
           <div className={scss.valuesData}>
             {data.map((el, idx) => (
-              <div className={scss.block} key={idx}>
-                <a>{el.icon}</a>
-                <h3>{el.title}</h3>
-                <h6>{el.description}</h6>
-              </div>
+              <Block el={el} key={idx} />
             ))}
           </div>
         </div>

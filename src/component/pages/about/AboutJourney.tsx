@@ -7,7 +7,7 @@ const AboutJourney = () => {
       year: "2019",
       title: "Company Founded",
       description:
-        "Tork Ash was established with a focus on industrial automation.",
+        "Tork A.Ş. was established with a focus on industrial automation.",
     },
     {
       year: "2020",
@@ -163,7 +163,7 @@ const AboutJourney = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> 
       </div>
     </section>
   );

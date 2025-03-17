@@ -6,9 +6,9 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    gap: 20px;
+    gap: 20px; 
     h5 {
-      color: #00468c;
+      color: #00468c; 
       font-size: 15px;
       font-weight: 500;
       padding-inline: 10px;
@@ -33,9 +33,6 @@
       justify-content: space-between;
       width: 100%;
       margin-top: 50px;
-      h1 {
-        font-size: 30px;
-      }
       h3 {
         font-size: 20px;
         font-weight: 500;
@@ -68,7 +65,6 @@
               font-size: 25px;
               width: 40px;
               height: 40px;
-              background: #000;
               border-radius: 50%;
               color: #00468c;
               background: #1e8fff1e;
@@ -100,7 +96,7 @@
 
         .schedule {
           width: 100%;
-          height: 270px;
+          height: 290px;
           background: white;
           border-radius: 10px;
           padding: 30px;
@@ -208,7 +204,7 @@
         width: 48%;
         .inputs {
           width: 100%;
-          height: 550px;
+          height: 520px;
           background: white;
           padding: 30px;
           border-radius: 10px;
@@ -244,6 +240,7 @@
                 background: #a8a8d012;
                 border-radius: 10px;
                 border: 1px solid rgba(128, 128, 128, 0.205);
+                font-size: 16px;
               }
             }
             .messageBlock {
@@ -252,9 +249,10 @@
               flex-direction: column;
               gap: 5px;
               width: 100%;
-              input {
+              textarea {
                 width: 100%;
-                padding: 10px 0 120px 0;
+                height: 150px;
+                padding-block: 10px;
                 padding-inline: 10px;
                 background: #a8a8d012;
                 border-radius: 10px;
@@ -264,7 +262,6 @@
             button {
               width: 100%;
               height: 40px;
-              margin-top: 20px;
               background: linear-gradient(90deg, #00468c, #1e90ff);
               color: white;
               border: none;
@@ -290,6 +287,356 @@
           align-items: start;
           flex-direction: column;
           gap: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .ContactMain {
+    .content {
+      .contactDetails {
+        .companyData {
+          .dataBlocks {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            .block {
+              width: 48%;
+              display: flex;
+              align-items: start;
+              gap: 5px;
+              height: 180px;
+              span {
+                font-size: 20px;
+              }
+              .data {
+                a {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+          .schedule {
+            height: 250px;
+          }
+        }
+        .inputData {
+          .inputs {
+            height: 700px;
+            form {
+              .inpBlock {
+                width: 100%;
+              }
+              button {
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1080px) {
+  .ContactMain {
+    .content {
+      .contactDetails {
+        .companyData {
+          .dataBlocks {
+            .block {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .ContactMain {
+    padding: 150px 0 50px 0;
+    .content {
+      .contactDetails {
+        .companyData {
+          width: 40%;
+          .dataBlocks {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            .block {
+              width: 100%;
+              display: flex;
+              align-items: start;
+              gap: 5px;
+              height: 180px;
+              span {
+                font-size: 20px;
+              }
+              .data {
+                a {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+          .schedule {
+            height: 350px;
+            flex-direction: column;
+          }
+        }
+        .inputData {
+          width: 55%;
+          .inputs {
+            height: 700px;
+            form {
+              .inpBlock {
+                width: 100%;
+              }
+              button {
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .ContactMain {
+    .content {
+      h1 {
+        font-size: 25px;
+      }
+      h6 {
+        font-size: 15px;
+        text-align: center;
+      }
+      h5 {
+        font-size: 13px;
+      }
+      gap: 10px;
+      .contactDetails {
+        flex-direction: column;
+        gap: 20px;
+        .companyData {
+          width: 100%;
+          h1 {
+            font-size: 25px;
+          }
+          h6 {
+            font-size: 15px;
+          }
+          gap: 10px;
+          .dataBlocks {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            .block {
+              width: 30%;
+              display: flex;
+              align-items: start;
+              gap: 5px;
+              height: 220px;
+              span {
+                font-size: 15px;
+                width: 35px;
+                height: 35px;
+              }
+              h3 {
+                font-size: 18px;
+              }
+              .data {
+                a {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+          .schedule {
+            height: 350px;
+            margin-top: 20px;
+            span {
+              font-size: 15px;
+              width: 35px;
+              height: 35px;
+            }
+            .scheduleText {
+              .mainText {
+                h3 {
+                  font-size: 18px;
+                }
+                .icons {
+                  display: flex;
+                  align-items: center;
+                  a {
+                    font-size: 20px;
+                  }
+                }
+              }
+              h6 {
+                font-size: 15px;
+              }
+              .scheduleData {
+                .day {
+                  h4 {
+                    font-size: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .inputData {
+          width: 100%;
+          flex-direction: column-reverse;
+          .inputs {
+            height: 550px;
+            h3 {
+              font-size: 18px;
+            }
+            form {
+              .inpBlock {
+                width: 45%;
+              }
+              button {
+                margin-top: 0;
+              }
+            }
+          }
+          .texts {
+            flex-direction: column-reverse;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 620px) {
+  .ContactMain {
+    .content {
+      .contactDetails {
+        .companyData {
+          .dataBlocks {
+            justify-content: center;
+            .block {
+              width: 48%;
+            }
+          }
+        }
+        .inputData {
+          .inputs {
+            height: auto;
+            form {
+              .inpBlock {
+                width: 100%;
+              }
+            }
+          }
+          .texts {
+            flex-direction: column-reverse;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 580px) {
+  .ContactMain {
+    .content {
+      .contactDetails {
+        margin-top: 30px;
+        .companyData {
+          .dataBlocks {
+            justify-content: start;
+            .block {
+              width: 100%;
+            }
+          }
+        }
+        .inputData {
+          .inputs {
+            height: auto;
+            form {
+              .inpBlock {
+                width: 100%;
+              }
+            }
+          }
+          .texts {
+            flex-direction: column-reverse;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 420px) {
+  .ContactMain {
+    .content {
+      gap: 10px;
+      .contactDetails {
+        .companyData {
+          .dataBlocks {
+            justify-content: start;
+            .block {
+              width: 100%;
+              height: 180px;
+            }
+          }
+          .schedule {
+            height: 400px;
+            .scheduleText {
+              .mainText {
+                align-items: start;
+                flex-direction: column-reverse;
+              }
+              .scheduleData {
+                .day {
+                  flex-direction: column;
+                  gap: 5px;
+                }
+              }
+            }
+          }
+        }
+        .inputData {
+          .inputs {
+            height: auto;
+            padding-inline: 20px;
+            form {
+              .inpBlock {
+                width: 100%;
+              }
+            }
+          }
+          .texts {
+            flex-direction: column-reverse;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 355px) {
+  .ContactMain {
+    .content {
+      .contactDetails {
+        .companyData {
+          .dataBlocks {
+            .block {
+              .data {
+                a {
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+          .schedule {
+            height: 420px;
+          }
         }
       }
     }

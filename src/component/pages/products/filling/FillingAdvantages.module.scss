@@ -1,0 +1,75 @@
+.FillingAdvantages {
+  padding-block: 100px;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    gap: 20px;
+    h2 {
+      font-size: 35px;
+      background: linear-gradient(90deg, #00468c, #1e90ff);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    h6 {
+      font-size: 18px;
+      font-weight: 400;
+      color: dimgray;
+      width: 60%;
+    }
+    .cardDatas {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .FillingAdvantages {
+    .content {
+      h6 {
+        width: 80%;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .FillingAdvantages {
+    padding-block: 50px;
+    .content {
+      h2 {
+        font-size: 25px;
+        width: 100%;
+      }
+      h6 {
+        font-size: 15px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 510px) {
+  .FillingAdvantages {
+    .content {
+      .cardDatas {
+        margin-top: 0px;
+        width: 100%;
+        height: 300px;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        justify-content: start;
+        gap: 20px;
+        padding-inline: 10px;
+      }
+    }
+  }
+}

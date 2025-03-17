@@ -13,27 +13,27 @@ const AboutMain = () => {
             cylinders with a commitment to precision, safety, and innovation.
           </h6>
           <div className={scss.aboutContent}>
-            <div className={scss.aboutStory}>
+            <div className={scss.aboutStory}> 
               <h5>OUR STORY</h5>
-              <h2>Leading the Gas Industry Forward</h2>
+              <h1 >Leading the Gas Industry Forward</h1>
               <div className={scss.description}>
-                <h6>
-                  Tork Ash is a leading manufacturer of automatic machines for
+                <p>
+                  Tork A.Ş. is a leading manufacturer of automatic machines for
                   filling gas cylinders. We create reliable, high-precision, and
                   safe systems that ensure efficient and accident-free filling
                   of cylinders of various capacities.
-                </h6>
-                <h6>
+                </p>
+                <p>
                   Founded in 2005, we've grown from a small engineering firm to
                   an international player in the gas cylinder automation
                   industry. Our commitment to innovation and safety has made us
                   a trusted partner for companies worldwide.
-                </h6>
-                <h6>
+                </p>
+                <p>
                   We specialize in developing comprehensive solutions that
                   optimize the entire gas cylinder filling process, from initial
                   setup to quality control and distribution.
-                </h6>
+                </p>
               </div>
             </div>
             <Image src={aboutImg} alt="" width={400} height={200} />
