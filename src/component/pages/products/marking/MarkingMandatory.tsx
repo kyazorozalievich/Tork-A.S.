@@ -1,6 +1,8 @@
 "use client";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
 import scss from "./MarkingMandatory.module.scss";
+import { useRef } from "react";
+import { MdOutlineChevronLeft, MdOutlineChevronRight } from "react-icons/md";
 
 const MarkingMandatory = () => {
   const data = [
@@ -47,6 +49,27 @@ const MarkingMandatory = () => {
         "Marking of compliance with standards and safety requirements",
     },
   ];
+
+  const mandatoryRef = useRef<HTMLDivElement>(null);
+
+  const scrollLeft = () => {
+    if (mandatoryRef.current) {
+      mandatoryRef.current.scrollTo({
+        left: mandatoryRef.current.scrollLeft - 200,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const scrollRight = () => {
+    if (mandatoryRef.current) {
+      mandatoryRef.current.scrollTo({
+        left: mandatoryRef.current.scrollLeft + 200,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section className={scss.MarkingMandatory}>
       <div className="container">
@@ -57,7 +80,10 @@ const MarkingMandatory = () => {
             the following marking elements
           </h6>
           <div className={scss.mandatoryContent}>
-            <div className={scss.mandatoryBlocks}>
+            <div className={scss.mandatoryBlocks} ref={mandatoryRef}>
+              <button className={scss.left} onClick={scrollLeft}>
+                <MdOutlineChevronLeft />
+              </button>
               {data.map((el, idx) => (
                 <div className={scss.mandatoryBlock} key={idx}>
                   <h2>{idx + 1}</h2>
@@ -67,6 +93,9 @@ const MarkingMandatory = () => {
                   </div>
                 </div>
               ))}
+              <button className={scss.right} onClick={scrollRight}>
+                <MdOutlineChevronRight />
+              </button>
             </div>
             <hr />
             <h6>

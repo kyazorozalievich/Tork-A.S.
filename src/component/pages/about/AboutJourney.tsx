@@ -1,5 +1,7 @@
 "use client";
+import { MdOutlineChevronLeft, MdOutlineChevronRight } from "react-icons/md";
 import scss from "./AboutJourney.module.scss";
+import { useRef } from "react";
 
 const AboutJourney = () => {
   const milestones = [
@@ -7,7 +9,7 @@ const AboutJourney = () => {
       year: "2019",
       title: "Company Founded",
       description:
-        "Tork A.Ş. was established with a focus on industrial automation.",
+        "Tork Ash was established with a focus on industrial automation.",
     },
     {
       year: "2020",
@@ -139,6 +141,26 @@ const AboutJourney = () => {
     },
   ];
 
+  const timelineRef = useRef<HTMLDivElement>(null);
+
+  const scrollLeft = () => {
+    if (timelineRef.current) {
+      timelineRef.current.scrollTo({
+        left: timelineRef.current.scrollLeft - 200,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const scrollRight = () => {
+    if (timelineRef.current) {
+      timelineRef.current.scrollTo({
+        left: timelineRef.current.scrollLeft + 200,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section className={scss.AboutJourney}>
       <div className="container">
@@ -151,7 +173,10 @@ const AboutJourney = () => {
             industrial engineering needs of the area’s top regional and global
             companies
           </p>
-          <div className={scss.timeline}>
+          <div className={scss.timeline} ref={timelineRef}>
+            <button className={scss.left} onClick={scrollLeft}>
+              <MdOutlineChevronLeft />
+            </button>
             {milestones.map((el, index) => (
               <div key={index} className={scss.timelineItem}>
                 <div className={scss.timelineContent}>
@@ -162,8 +187,11 @@ const AboutJourney = () => {
                 <div className={scss.circle}></div>
               </div>
             ))}
+            <button className={scss.right} onClick={scrollRight}>
+              <MdOutlineChevronRight />
+            </button>
           </div>
-        </div> 
+        </div>
       </div>
     </section>
   );

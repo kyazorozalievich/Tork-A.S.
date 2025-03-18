@@ -5,6 +5,8 @@ import { FaRegBuilding } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { RxCountdownTimer } from "react-icons/rx";
 import Block from "../Block";
+import { useRef } from "react";
+import { MdOutlineChevronLeft, MdOutlineChevronRight } from "react-icons/md";
 
 const AboutValues = () => {
   const data = [
@@ -41,6 +43,26 @@ const AboutValues = () => {
     },
   ];
 
+  const aboutValuesRef = useRef<HTMLDivElement>(null);
+
+  const scrollLeft = () => {
+    if (aboutValuesRef.current) {
+      aboutValuesRef.current.scrollTo({
+        left: aboutValuesRef.current.scrollLeft - 200,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const scrollRight = () => {
+    if (aboutValuesRef.current) {
+      aboutValuesRef.current.scrollTo({
+        left: aboutValuesRef.current.scrollLeft + 200,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section className={scss.AboutValues}>
       <div className="container">
@@ -51,10 +73,16 @@ const AboutValues = () => {
             At Tork A.Ş. our core values guide everything we do, from product
             development to customer relationships.
           </h6>
-          <div className={scss.valuesData}>
+          <div className={scss.valuesData} ref={aboutValuesRef}>
+            <button className={scss.left} onClick={scrollLeft}>
+              <MdOutlineChevronLeft />
+            </button>
             {data.map((el, idx) => (
               <Block el={el} key={idx} />
             ))}
+            <button className={scss.right} onClick={scrollRight}>
+              <MdOutlineChevronRight />
+            </button>
           </div>
         </div>
       </div>

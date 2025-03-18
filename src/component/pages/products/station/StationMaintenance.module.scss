@@ -25,6 +25,7 @@
       justify-content: space-between;
       width: 100%;
       margin-top: 40px;
+
       .maintenanceBlock {
         width: 45%;
         height: 580px;
@@ -238,6 +239,26 @@
             gap: 20px;
             width: 100%;
             flex-wrap: nowrap;
+            button {
+              display: block;
+              font-size: 35px;
+              width: 40px;
+              height: 40px;
+              border-radius: 50px;
+              backdrop-filter: blur(20px);
+              position: sticky;
+              z-index: 98;
+              border: none;
+              color: black;
+            }
+            .left {
+              top: 20px;
+              left: 0px;
+            }
+            .right {
+              top: 20px;
+              right: 0px;
+            }
             .textBlock {
               width: 250px;
               h5 {

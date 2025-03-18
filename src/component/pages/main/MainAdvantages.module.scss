@@ -1,4 +1,5 @@
 .MainAdvantages {
+  padding: 50px 0;
   .content {
     display: flex;
     align-items: center;
@@ -13,7 +14,7 @@
         padding-block: 5px;
         border-radius: 50px;
         background: #1e8fff1e;
-		width: 150px;
+        width: 150px;
       }
       h1 {
         font-size: 40px;
@@ -25,17 +26,21 @@
         font-size: 20px;
         color: #333;
         padding-bottom: 30px;
+        width: 80%;
       }
       .left__cards {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         gap: 30px;
+        button {
+          display: none;
+        }
         .left__card {
           border-radius: 15px;
           width: 280px;
           border: none;
-          height: 250px;
+          height: 280px;
           background-color: white;
           padding: 20px;
           border: 1px solid white;
@@ -51,7 +56,7 @@
             padding: 20px 0;
           }
           p {
-            font-size: 1rem;
+            font-size: 15px;
             font-weight: 400;
             color: grey;
           }
@@ -72,6 +77,183 @@
     .right {
       img {
         border-radius: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1230px) {
+  .MainAdvantages {
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 50px;
+      .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+
+        p {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          width: 80%;
+        }
+        .left__cards {
+          width: 100%;
+          .left__card {
+            width: 22%;
+            height: 300px;
+            align-items: start;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p {
+              text-align: start;
+            }
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        img {
+          width: 100%;
+          height: 500px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1145px) {
+  .MainAdvantages {
+    .content {
+      .left {
+        .left__cards {
+          flex-wrap: wrap;
+          .left__card {
+            width: 48%;
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 830px) {
+  .MainAdvantages {
+    .content {
+      .left {
+        .left__cards {
+          flex-wrap: wrap;
+          .left__card {
+            width: 45%;
+            height: 270px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .MainAdvantages {
+    .content {
+      .left {
+        h5 {
+          font-size: 15px;
+        }
+        h1 {
+          font-size: 25px;
+        }
+        p {
+          font-size: 15px;
+        }
+        .left__cards {
+          flex-wrap: nowrap;
+          width: 100%;
+          height: 320px;
+          overflow-x: auto;
+          button {
+            display: block;
+            font-size: 30px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            backdrop-filter: blur(20px);
+            position: sticky;
+            z-index: 98;
+            border: none;
+            color: black;
+          }
+
+          .left {
+            top: 20px;
+            left: 0px;
+          }
+
+          .right {
+            top: 20px;
+            right: 0px;
+          }
+          .left__card {
+            flex: 0 0 auto;
+            width: 280px;
+            height: 300px;
+            h6 {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .right {
+        img {
+          height: 400px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 440px) {
+  .MainAdvantages {
+    .content {
+      .left {
+        gap: 10px;
+        .left__cards {
+          height: 350px;
+          .left__card {
+            flex: 0 0 auto;
+            width: 250px;
+            height: 330px;
+            .icon {
+              font-size: 20px;
+              width: 40px;
+              height: 40px;
+            }
+            h6 {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .right {
+        img {
+          height: 400px;
+          border-radius: 10px;
+        }
       }
     }
   }

@@ -15,8 +15,10 @@ import schott from "@/component/assets/images/logo/company-schott.svg";
 import spolgas from "@/component/assets/images/logo/company-spolgas.png";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import { useRouter } from "next/navigation";
 
 const MainWelcome = () => {
+  const router = useRouter();
   const logos = [
     arcelik,
     midea,
@@ -38,9 +40,7 @@ const MainWelcome = () => {
       <div className="container">
         <div className={scss.content}>
           <div className={scss.text}>
-            <h1>
-              Automated machines <br /> for Gas Cylinder Refilling
-            </h1>
+            <h1>Automated machines for Gas Cylinder Refilling</h1>
             <p>
               We develop and manufacture high-quality equipment for gas cylinder
               refilling, ensuring safety, efficiency, and ease of use. Our
@@ -49,8 +49,18 @@ const MainWelcome = () => {
               the reliability and durability of our products.
             </p>
             <div className={scss.btns}>
-              <button className={scss.btn__first}>Explore Solutions</button>
-              <button className={scss.btn__second}>Contact Us</button>
+              <button
+                className={scss.btn__first}
+                onClick={() => router.push("/products/filling")}
+              >
+                Explore Solutions
+              </button>
+              <button
+                className={scss.btn__second}
+                onClick={() => router.push("/contact")}
+              >
+                Contact Us
+              </button>
             </div>
           </div>
           <iframe

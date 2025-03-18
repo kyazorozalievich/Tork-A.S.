@@ -37,6 +37,9 @@
         flex-wrap: wrap;
         width: 100%;
         margin-top: 40px;
+        button {
+          display: none;
+        }
         .mandatoryBlock {
           width: 32%;
           display: flex;
@@ -185,13 +188,31 @@
           width: 100%;
           flex-wrap: nowrap;
           gap: 10px;
-          padding-inline: 20px;
           padding-block: 20px;
           display: flex;
           justify-content: start;
           align-items: start;
           overflow-x: scroll;
           background: white;
+          button {
+            font-size: 35px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            backdrop-filter: blur(20px);
+            display: block;
+            position: sticky;
+            z-index: 98;
+            border: none;
+            color: black;
+            top: 50px;
+          }
+          .left {
+            left: 0px;
+          }
+          .right {
+            right: 0px;
+          }
           .mandatoryBlock {
             width: 250px;
             height: 120px;

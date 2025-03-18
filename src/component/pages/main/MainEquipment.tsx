@@ -2,6 +2,8 @@
 import Image from "next/image";
 import scss from "./MainEquipment.module.scss";
 import { CiTimer } from "react-icons/ci";
+import { useRef } from "react";
+import { MdOutlineChevronLeft, MdOutlineChevronRight } from "react-icons/md";
 
 const MainEquipment = () => {
   const cardsData = [
@@ -24,11 +26,31 @@ const MainEquipment = () => {
       description: "Precise and fast systems with advanced control modules.",
     },
   ];
+
+  const equipmentRef = useRef<HTMLDivElement>(null);
+
+  const scrollLeft = () => {
+    if (equipmentRef.current) {
+      equipmentRef.current.scrollTo({
+        left: equipmentRef.current.scrollLeft - 200,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const scrollRight = () => {
+    if (equipmentRef.current) {
+      equipmentRef.current.scrollTo({
+        left: equipmentRef.current.scrollLeft + 200,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section className={scss.MainEquipment}>
       <div className="container">
         <div className={scss.content}>
-         
           <h1>Advanced Solutions for Gas Refilling</h1>
           <p>
             Explore our range of modern and safe equipment designed for
@@ -37,7 +59,10 @@ const MainEquipment = () => {
             improve safety. Our equipment meets high quality standards and
             ensures stable and uninterrupted operation.
           </p>
-          <div className={scss.cards}>
+          <div className={scss.cards} ref={equipmentRef}>
+            <button className={scss.left} onClick={scrollLeft}>
+              <MdOutlineChevronLeft />
+            </button>
             {cardsData.map((el, idx) => (
               <div className={scss.card} key={idx}>
                 <div className={scss.imgBlock}>
@@ -52,6 +77,9 @@ const MainEquipment = () => {
                 </div>
               </div>
             ))}
+            <button className={scss.right} onClick={scrollRight}>
+              <MdOutlineChevronRight />
+            </button>
           </div>
         </div>
       </div>

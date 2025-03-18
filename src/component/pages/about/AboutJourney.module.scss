@@ -107,6 +107,29 @@
           background: transparent;
         }
         margin-top: 0px;
+        position: relative;
+        button {
+          font-size: 35px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50px;
+          backdrop-filter: blur(20px);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: sticky;
+          z-index: 98;
+          border: none;
+          color: black;
+        }
+        .left {
+          top: 20px;
+          left: 0px;
+        }
+        .right {
+          top: 20px;
+          right: 0px;
+        }
         .timelineItem {
           .timelineContent {
             width: 300px;
@@ -140,6 +163,7 @@
       }
       .timeline {
         height: 350px;
+
         .timelineItem {
           .timelineContent {
             width: 300px;
@@ -173,7 +197,7 @@
         height: 380px;
         .timelineItem {
           .timelineContent {
-            width: 300px;
+            width: 250px;
             height: 330px;
             h3 {
               font-size: 17px;

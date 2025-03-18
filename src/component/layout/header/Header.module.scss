@@ -282,9 +282,11 @@
           a {
             font-size: 18px;
             font-weight: 500;
-            color: black;
           }
           .product {
+			a {
+				font-size: 18px;
+			}
             .modal {
               width: 200px;
               right: 0px;
@@ -311,11 +313,12 @@
               font-size: 18px;
               border-bottom: 2px solid transparent;
               color: black;
+              color: black;
             }
             .languagesModal {
               right: 0px;
-              padding-block: 10px;
               width: 200px;
+			  padding-block: 10px;
               .country {
                 h4 {
                   font-size: 18px;
@@ -332,7 +335,7 @@
             align-items: center;
             gap: 5px;
             margin-top: 5px;
-            color: black;
+			color: black;
           }
         }
       }

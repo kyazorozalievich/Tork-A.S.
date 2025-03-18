@@ -1,9 +1,33 @@
 "use client";
 import Image from "next/image";
 import scss from "./MainAdvantages.module.scss";
-import { MdSwipeRight } from "react-icons/md";
+import {
+  MdOutlineChevronLeft,
+  MdOutlineChevronRight,
+  MdSwipeRight,
+} from "react-icons/md";
+import { useRef } from "react";
 
 const MainAdvantages = () => {
+  const advantagesRef = useRef<HTMLDivElement>(null);
+
+  const scrollLeft = () => {
+    if (advantagesRef.current) {
+      advantagesRef.current.scrollTo({
+        left: advantagesRef.current.scrollLeft - 200,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const scrollRight = () => {
+    if (advantagesRef.current) {
+      advantagesRef.current.scrollTo({
+        left: advantagesRef.current.scrollLeft + 200,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <section className={scss.MainAdvantages}>
       <div className="container">
@@ -16,7 +40,10 @@ const MainAdvantages = () => {
               solutions that set the standard for quality, precision, and
               reliability.
             </p>
-            <div className={scss.left__cards}>
+            <div className={scss.left__cards} ref={advantagesRef}>
+              <button className={scss.left} onClick={scrollLeft}>
+                <MdOutlineChevronLeft />
+              </button>
               <div className={scss.left__card}>
                 <div className={scss.icon}>
                   <MdSwipeRight />
@@ -57,6 +84,9 @@ const MainAdvantages = () => {
                   systems, ensuring maximum safety and efficiency.
                 </p>
               </div>
+              <button className={scss.right} onClick={scrollRight}>
+                <MdOutlineChevronRight />
+              </button>
             </div>
           </div>
           <div className={scss.right}>

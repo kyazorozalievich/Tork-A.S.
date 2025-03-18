@@ -4,9 +4,14 @@ import scss from "./FillingAdvantages.module.scss";
 import { GrThreeDEffects } from "react-icons/gr";
 import { IoStarOutline } from "react-icons/io5";
 import { TbAutomation } from "react-icons/tb";
-import { MdSystemUpdateAlt } from "react-icons/md";
+import {
+  MdOutlineChevronLeft,
+  MdOutlineChevronRight,
+  MdSystemUpdateAlt,
+} from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 import Block from "../../Block";
+import { useRef } from "react";
 
 const FillingAdvantages = () => {
   const cardData = [
@@ -47,6 +52,27 @@ const FillingAdvantages = () => {
         "24/7 technical support and quick response to any customer requests",
     },
   ];
+
+  const advantagesRef = useRef<HTMLDivElement>(null);
+
+  const scrollLeft = () => {
+    if (advantagesRef.current) {
+      advantagesRef.current.scrollTo({
+        left: advantagesRef.current.scrollLeft - 200,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const scrollRight = () => {
+    if (advantagesRef.current) {
+      advantagesRef.current.scrollTo({
+        left: advantagesRef.current.scrollLeft + 200,
+        behavior: "smooth",
+      });
+    } 
+  };
+
   return (
     <section className={scss.FillingAdvantages}>
       <div className="container">
@@ -56,10 +82,16 @@ const FillingAdvantages = () => {
             Our equipment is designed with all safety and efficiency
             requirements in mind when working with gas
           </h6>
-          <div className={scss.cardDatas}>
+          <div className={scss.cardDatas} ref={advantagesRef}>
+            <button className={scss.left} onClick={scrollLeft}>
+              <MdOutlineChevronLeft />
+            </button>
             {cardData.map((el, idx) => (
               <Block el={el} key={idx} />
             ))}
+            <button className={scss.right} onClick={scrollRight}>
+              <MdOutlineChevronRight />
+            </button>
           </div>
         </div>
       </div>

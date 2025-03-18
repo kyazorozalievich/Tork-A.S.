@@ -39,6 +39,9 @@
       flex-wrap: wrap;
       gap: 40px;
       justify-content: center;
+      button {
+        display: none;
+      }
       .block {
         width: 400px;
         height: 200px;
@@ -125,6 +128,28 @@
         flex-wrap: nowrap;
         width: 100%;
         height: 300px;
+        padding-inline: 10px;
+        position: relative;
+        button {
+          display: block;
+          font-size: 35px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50px;
+          backdrop-filter: blur(20px);
+          position: sticky;
+          z-index: 98;
+          border: none;
+          color: black;
+        }
+        .left {
+          top: 20px;
+          left: 0px;
+        }
+        .right {
+          top: 20px;
+          right: 0px;
+        }
       }
     }
   }
