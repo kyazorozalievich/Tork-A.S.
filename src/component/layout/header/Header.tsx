@@ -18,7 +18,6 @@ import { RiMenu3Fill, RiWhatsappLine } from "react-icons/ri";
 import { LuPhone } from "react-icons/lu";
 import { GrMapLocation } from "react-icons/gr";
 import { IoClose } from "react-icons/io5";
-import Script from "next/script";
 
 const Header = () => {
   const [languageCLick, setlanguageClick] = useState(false);
@@ -96,30 +95,6 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
-  <Script
-    src="https://maps.api.2gis.ru/2.0/loader.js"
-    strategy="lazyOnload"
-    onLoad={() => console.log("2GIS API loaded")}
-  />;
-  useEffect(() => {
-    const initMap = () => {
-      if ((window as any).DG) {
-        console.log("2GIS API is ready");
-      }
-    };
-
-    if (typeof window !== "undefined") {
-      if ((window as any).DG) {
-        initMap();
-      } else {
-        window.addEventListener("load", initMap);
-      }
-    }
-
-    return () => {
-      window.removeEventListener("load", initMap);
-    };
-  }, []);
 
   return (
     <>
@@ -195,7 +170,7 @@ const Header = () => {
               >
                 About
               </Link>
-              <Link
+              <Link 
                 href="/contact"
                 className={pathname === "/contact" ? scss.active : scss.link}
               >
