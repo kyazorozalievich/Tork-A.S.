@@ -4,23 +4,65 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
-    .tork {
-      h5 {
-        font-size: 1.5rem;
-        background: linear-gradient(90deg, #00468c, #1e90ff);
-        -webkit-background-clip: text;
-        color: transparent;
-        margin-bottom: 20px;
+    width: 100%;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 17px;
+      img {
+        width: 200px;
+        height: 50px;
       }
       p {
         font-size: 1rem;
         color: #333;
       }
-    }
-    .products {
-      display: flex;
-      flex-direction: column;
-      gap: 17px;
+      .icons {
+        display: flex;
+        align-items: start;
+        flex-direction: row;
+        gap: 15px;
+
+        a {
+          font-size: 20px;
+          color: black;
+          transition: 0.2s ease-in-out;
+        }
+        .linkedin {
+          &:hover {
+            transform: scale(1.05);
+            color: #00468c;
+          }
+        }
+        .youtube {
+          &:hover {
+            transform: scale(1.05);
+            color: red;
+          }
+        }
+        .instagram {
+          background: #000;
+          color: white;
+          width: 20px;
+          height: 20px;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 17px;
+          &:hover {
+            transform: scale(1.05);
+            background: rgb(131, 58, 180);
+            background: linear-gradient(
+              139deg,
+              rgba(131, 58, 180, 1) 0%,
+              rgba(253, 29, 29, 1) 50%,
+              rgba(252, 176, 69, 1) 100%
+            );
+          }
+        }
+      }
       h6 {
         font-size: 1.3rem;
         margin-bottom: 6px;
@@ -38,49 +80,14 @@
         }
       }
     }
-    .company {
-      display: flex;
-      flex-direction: column;
-      gap: 17px;
-      h6 {
-        font-size: 1.3rem;
-        background: linear-gradient(90deg, #00468c, #1e90ff);
-        -webkit-background-clip: text;
-        color: transparent;
-        margin-bottom: 6px;
-      }
-      a {
-        font-size: 0.9rem;
-        color: #333;
-        font-weight: 500;
-        transition: all 0.5s ease-in-out;
-        &:hover {
-          color: #1e90ff;
-        }
-      }
-    }
-    .contact {
-      display: flex;
-      flex-direction: column;
-      gap: 17px;
-      h6 {
-        font-size: 1.3rem;
-        background: linear-gradient(90deg, #00468c, #1e90ff);
-        -webkit-background-clip: text;
-        color: transparent;
-        margin-bottom: 6px;
-        p {
-          font-size: 1rem;
-          color: #333;
-          font-weight: 900;
-        }
-      }
+    .tork {
+      width: 25%;
     }
   }
   .footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 80px;
     background: linear-gradient(90deg, #00468c, #1e90ff);
     width: 100%;
@@ -90,19 +97,59 @@
       font-weight: 500;
       color: white;
     }
-    .footer__links {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      a {
-        font-size: 1rem;
-        color: white;
-        font-weight: 500;
-        transition: all 0.5s ease-in-out;
-        border-bottom: 2px solid transparent;
-        &:hover {
-          transform: scale(1.05);
-          border-bottom: 2px solid white;
+  }
+}
+
+@media (max-width: 900px) {
+  .Footer {
+    .content {
+      flex-wrap: wrap;
+      gap: 40px;
+      .tork {
+        width: 40%;
+      }
+    }
+  }
+}
+@media (max-width: 560px) {
+  .Footer {
+    .content {
+      .tork {
+        width: 50%;
+      }
+    }
+  }
+}
+@media (max-width: 440px) {
+  .Footer {
+    .content {
+      div {
+        h6 {
+          font-size: 18px;
+        }
+        a {
+          font-size: 13px;
+        }
+      }
+      .tork {
+        width: 100%;
+      }
+    }
+    .footer {
+      h6 {
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 390px) {
+  .Footer {
+    .content {
+      .tork {
+        img {
+          width: 120px;
+          height: 30px;
         }
       }
     }

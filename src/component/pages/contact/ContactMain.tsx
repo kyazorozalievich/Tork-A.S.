@@ -200,8 +200,7 @@ const ContactMain = () => {
                   </div>
                   <div className={scss.messageBlock}>
                     <h4>Message*</h4>
-                    <input
-                      type="text"
+                    <textarea
                       placeholder="Tell us about your needs..."
                       {...register("message", { required: true })}
                     />
@@ -210,11 +209,11 @@ const ContactMain = () => {
                 </form>
               </div>
               <div className={scss.texts}>
-                <h1>Any questions? Send a message</h1>
                 <h6>
                   We guarantee the confidentiality of your data. They will not
                   be transferred to third parties.
                 </h6>
+                <h1>Any questions? Send a message</h1>
                 <h5>MESSAGE</h5>
               </div>
             </div>

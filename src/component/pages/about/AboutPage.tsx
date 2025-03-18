@@ -3,6 +3,7 @@ import AboutMain from "./AboutMain";
 import AboutValues from "./AboutValues";
 import AboutJourney from "./AboutJourney";
 import AboutCompany from "./AboutCompany";
+import Consultation from "../products/Consultation";
 
 const AboutPage = () => {
   return (
@@ -16,6 +17,7 @@ const AboutPage = () => {
       <AboutValues />
       <AboutCompany />
       <AboutJourney />
+      <Consultation />
     </div>
   );
 };

@@ -7,8 +7,9 @@
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+    text-align: center;
     h5 {
-      color: #00468C;
+      color: #00468c;
       font-size: 15px;
       font-weight: 500;
       padding-inline: 10px;
@@ -26,6 +27,22 @@
       font-size: 18px;
       font-weight: 400;
       color: dimgray;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ContactMap {
+    .content {
+      h1 {
+        font-size: 25px;
+      }
+      h6 {
+        font-size: 15px;
+      }
+      h5 {
+        font-size: 13px;
+      }
     }
   }
 }

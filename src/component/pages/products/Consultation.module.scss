@@ -1,0 +1,106 @@
+.Consultation {
+  padding-block: 50px;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .consultationBlock {
+      width: 800px;
+      height: 300px;
+      background: white;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+      padding: 30px;
+      h2 {
+        font-size: 35px;
+        background: linear-gradient(90deg, #00468c, #1e90ff);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      h6 {
+        font-size: 18px;
+        font-weight: 400;
+        color: dimgray;
+        width: 100%;
+      }
+      button {
+        padding: 12px 30px;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: 0.4s ease-in-out;
+        cursor: pointer;
+        background: linear-gradient(90deg, #00468c, #1e90ff);
+        color: white;
+        border: none;
+        box-shadow: 0 4px 10px rgba(0, 70, 140, 0.3);
+
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 6px 15px rgba(0, 70, 140, 0.5);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Consultation {
+    .content {
+      .consultationBlock {
+        border-radius: 10px;
+        height: 250px;
+        h2 {
+          font-size: 25px;
+        }
+        h6 {
+          font-size: 15px;
+        }
+        button {
+          font-size: 13px;
+          padding-inline: 20px;
+          padding-block: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .Consultation {
+    padding-block: 50px;
+    .content {
+      .consultationBlock {
+        height: 300px;
+        h2 {
+          font-size: 25px;
+          width: 100%;
+        }
+        h6 {
+          font-size: 15px;
+        }
+        button {
+          font-size: 13px;
+          padding-inline: 20px;
+          padding-block: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .Consultation {
+    .content {
+      .consultationBlock {
+        h6 {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

@@ -92,7 +92,6 @@
 		align-items: center;
 		width: 100%;
 		margin: 100px 0 50px 0;
-		// height: 200px;
 		.logo {
 			width: 200px;
 			height: 50px;
@@ -101,7 +100,6 @@
 		}
 	}
 }
-
 @media (max-width: 1000px) {
 	.MainWelcome {
 		.content {
@@ -111,12 +109,6 @@
 				}
 				p {
 					max-width: 600px;
-				}
-				.btns {
-					.btn__first {
-					}
-					.btn__second {
-					}
 				}
 			}
 			.video {
@@ -135,14 +127,6 @@
 				p {
 					width: 400px;
 				}
-				.btns {
-					.btn__first {
-					}
-					.btn__second {
-					}
-				}
-			}
-			.video {
 			}
 		}
 	}
@@ -164,8 +148,6 @@
 					}
 				}
 			}
-			.video {
-			}
 		}
 	}
 }
@@ -180,12 +162,6 @@
 				p {
 					font-size: 0.9rem;
 					padding: 8px 0;
-				}
-				.btns {
-					.btn__first {
-					}
-					.btn__second {
-					}
 				}
 			}
 			.video {
@@ -238,12 +214,6 @@
 					padding: 4px 0;
 					font-size: 15px;
 				}
-				.btns {
-					.btn__first {
-					}
-					.btn__second {
-					}
-				}
 			}
 			.video {
 				width: 240px;
@@ -270,10 +240,6 @@
 				}
 				.btns {
 					justify-content: center;
-					.btn__first {
-					}
-					.btn__second {
-					}
 				}
 			}
 			.video {
@@ -296,12 +262,6 @@
 					padding: 10px 0;
 					font-size: 14px;
 				}
-				.btns {
-					.btn__first {
-					}
-					.btn__second {
-					}
-				}
 			}
 			.video {
 				width: 400px;
@@ -322,12 +282,6 @@
 					padding: 5px 0;
 					font-size: 14px;
 				}
-				.btns {
-					.btn__first {
-					}
-					.btn__second {
-					}
-				}
 			}
 			.video {
 				width: 350px;
@@ -344,12 +298,6 @@
 					width: 350px;
 					padding: 6px 0;
 					font-size: 14px;
-				}
-				.btns {
-					.btn__first {
-					}
-					.btn__second {
-					}
 				}
 			}
 			.video {
@@ -394,18 +342,6 @@
 	.MainWelcome {
 		.content {
 			gap: 20px;
-			.text {
-				h1 {
-				}
-				p {
-				}
-				.btns {
-					.btn__first {
-					}
-					.btn__second {
-					}
-				}
-			}
 			.video {
 				width: 250px;
 				height: 250px;
@@ -418,17 +354,9 @@
 		.content {
 			gap: 15px;
 			.text {
-				h1 {
-				}
 				p {
 					width: 230px;
 					padding: 3px 0;
-				}
-				.btns {
-					.btn__first {
-					}
-					.btn__second {
-					}
 				}
 			}
 			.video {

@@ -1,6 +1,6 @@
 .AboutMain {
   padding: 200px 0 100px 0;
-  
+
   .content {
     display: flex;
     align-items: center;
@@ -33,7 +33,7 @@
         align-items: start;
         flex-direction: column;
         gap: 10px;
-        width: 50%;
+        width: 50%; 
         h5 {
           color: #00468c;
           font-size: 15px;
@@ -43,19 +43,14 @@
           border-radius: 50px;
           background: #1e8fff1e;
         }
-        h2 {
-          font-size: 30px;
-          background: linear-gradient(90deg, #00468c, #1e90ff);
-          -webkit-background-clip: text;
-          color: transparent;
-        }
+
         .description {
           display: flex;
           align-items: start;
           flex-direction: column;
           gap: 40px;
           width: 90%;
-          h6 {
+          p {
             font-size: 18px;
             font-weight: 400;
             color: dimgray;
@@ -69,6 +64,118 @@
         height: 450px;
         border-radius: 10px;
         object-fit: cover;
+      }
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .AboutMain {
+    .content {
+      .aboutContent {
+        .aboutStory {
+          h2 {
+            width: 80%;
+          }
+          .description {
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1150px) {
+  .AboutMain {
+    .content {
+      .aboutContent {
+        img {
+          width: 500px;
+          height: 500px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .AboutMain {
+    .content {
+      .aboutContent {
+        .aboutStory {
+          .description {
+            gap: 10px;
+          }
+        }
+        img {
+          width: 450px;
+          height: 450px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .AboutMain {
+    .content {
+      .aboutContent {
+        flex-direction: column;
+        gap: 40px;
+        .aboutStory {
+          width: 100%;
+          .description {
+            gap: 10px;
+          }
+        }
+        img {
+          width: 100%;
+          height: 350px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .AboutMain {
+    padding: 150px 0 100px 0;
+    .content {
+      h1 {
+        font-size: 25px;
+      }
+      h6 {
+        font-size: 15px;
+      }
+      h5 {
+        font-size: 13px;
+      }
+      .aboutContent {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 20px;
+        .aboutStory {
+          width: 100%;
+
+          .description {
+            gap: 10px;
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 430px) {
+  .AboutMain {
+    .content {
+      h6 {
+        width: 100%;
+      }
+      .aboutContent {
+        img {
+          height: 250px;
+        }
       }
     }
   }

@@ -38,6 +38,7 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 40px;
+      justify-content: center;
       .block {
         width: 400px;
         height: 200px;
@@ -69,6 +70,79 @@
           text-align: start;
           width: 100%;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .AboutValues {
+    .content {
+      gap: 20px;
+      align-items: start;
+      h6 {
+        text-align: start;
+      }
+      .valuesData {
+        justify-content: start;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .AboutValues {
+    .content {
+      h1 {
+        font-size: 25px;
+      }
+      h6 {
+        font-size: 15px;
+      }
+      h5 {
+        font-size: 13px;
+      }
+    }
+  }
+}
+@media (max-width: 630px) {
+  .AboutValues {
+    .content {
+      .valuesData {
+        gap: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 580px) {
+  .AboutValues {
+    .content {
+      h6 {
+        width: 100%;
+      }
+      .valuesData {
+        gap: 30px;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 300px;
+      }
+    }
+  }
+}
+@media (max-width: 440px) {
+  .AboutValues {
+    .content {
+      .valuesData {
+        gap: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 350px) {
+  .AboutValues {
+    .content {
+      .valuesData {
+        gap: 20px;
       }
     }
   }

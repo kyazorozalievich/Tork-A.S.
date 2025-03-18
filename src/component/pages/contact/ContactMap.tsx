@@ -1,9 +1,8 @@
 "use client";
-import dynamic from "next/dynamic";
 import scss from "./ContactMap.module.scss";
+import Map from "./Map";
 
 const ContactMap = () => {
-  const DynamicMap = dynamic(() => import("./Map"), { ssr: false });
   return (
     <section className={scss.ContactMap}>
       <div className="container">
@@ -11,7 +10,7 @@ const ContactMap = () => {
           <h5>OUR LOCATION</h5>
           <h1>Visit Our Company</h1>
           <h6>Come see our facilities and meet our team in person.</h6>
-          <DynamicMap />
+          <Map />
         </div>
       </div>
     </section>
