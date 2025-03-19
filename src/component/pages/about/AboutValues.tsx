@@ -70,7 +70,7 @@ const AboutValues = () => {
           <h5>OUR VALUES</h5>
           <h1>What Drives Us</h1>
           <h6>
-            At Tork A.Ş. our core values guide everything we do, from product
+            At Tork Mechatronics A.Ş. our core values guide everything we do, from product
             development to customer relationships.
           </h6>
           <div className={scss.valuesData} ref={aboutValuesRef}>

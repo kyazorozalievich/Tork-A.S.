@@ -1,7 +1,7 @@
 .StationMain {
   padding-top: 200px;
   height: 600px;
-  background-image: url("https://i.pinimg.com/736x/16/8e/cf/168ecf8093b519d491967e73b20d56be.jpg");
+  background-image: url("https://i.pinimg.com/736x/80/7b/53/807b53988de2dcb692bf83cde68f12ff.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -24,9 +24,8 @@
     }
     h1 {
       font-size: 40px;
-      background: linear-gradient(90deg, #00468c, #1e90ff);
-      -webkit-background-clip: text;
-      color: transparent;
+      color: #1e90ff;
+      text-shadow: 0px 5px 10px black;
       width: 60%;
     }
     h6 {

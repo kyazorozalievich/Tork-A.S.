@@ -172,7 +172,17 @@ const Header = () => {
                 Home
               </Link>
               <div className={scss.product}>
-                <a className={scss.link}>
+                <a
+                  className={
+                    pathname === "/products/filling"
+                      ? scss.active
+                      : pathname === "/products/station"
+                      ? scss.active
+                      : pathname === "/products/marking"
+                      ? scss.active
+                      : scss.link
+                  }
+                >
                   Products <FaAngleDown />
                 </a>
                 {!modalCLick && (

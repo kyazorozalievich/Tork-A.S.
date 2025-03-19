@@ -4,26 +4,33 @@ import scss from "./MainEquipment.module.scss";
 import { CiTimer } from "react-icons/ci";
 import { useRef } from "react";
 import { MdOutlineChevronLeft, MdOutlineChevronRight } from "react-icons/md";
+import { AiOutlineSafety } from "react-icons/ai";
+import { TbTruckDelivery } from "react-icons/tb";
+import img1 from "../../assets/images/about/aboutHistoryImg.jpg";
+import img2 from "../../assets/images/home/equipmentTest.jpg";
+import img3 from "../../assets/images/home/equipmentTransport.jpg";
 
 const MainEquipment = () => {
   const cardsData = [
     {
-      img: "https://i.pinimg.com/736x/ed/9f/7a/ed9f7aa67ecbd2120414034db89505ba.jpg",
+      img: img1,
       icon: <CiTimer />,
       title: "Automatic Refilling Stations",
       description: "Precise and fast systems with advanced control modules.",
     },
     {
-      img: "https://i.pinimg.com/736x/ed/9f/7a/ed9f7aa67ecbd2120414034db89505ba.jpg",
-      icon: <CiTimer />,
-      title: "Automatic Refilling Stations",
-      description: "Precise and fast systems with advanced control modules.",
+      img: img2,
+      icon: <AiOutlineSafety />,
+      title: "Testing & Quality Inspection",
+      description:
+        "Equipment for checking tightness, pressure, and cylinder safety.",
     },
     {
-      img: "https://i.pinimg.com/736x/ed/9f/7a/ed9f7aa67ecbd2120414034db89505ba.jpg",
-      icon: <CiTimer />,
-      title: "Automatic Refilling Stations",
-      description: "Precise and fast systems with advanced control modules.",
+      img: img3,
+      icon: <TbTruckDelivery />,
+      title: "Transport & Distribution Systems",
+      description:
+        "Solutions for convenient logistics and storage of gas containers.",
     },
   ];
 

@@ -18,7 +18,7 @@
     transform: translateY(0);
   }
   .contact {
-    background: linear-gradient(90deg, #00468c, #1e90ff);
+    background: #1e90ff;
     width: 100%;
     height: 60px;
     display: flex;
@@ -76,10 +76,8 @@
       display: flex;
       align-items: center;
       gap: 5px;
-      background: linear-gradient(90deg, #00468c, #1e90ff);
-      -webkit-background-clip: text;
-      color: transparent;
-      border-bottom: 2px solid #00468c;
+      color: #1e90ff;
+      border-bottom: 2px solid #1e90ff;
       transition: 0.5s ease-in-out;
       &:hover {
         transform: scale(1.05);
@@ -221,7 +219,7 @@
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    background: linear-gradient(90deg, #00468c, #1e90ff);
+    background: #1e90ff;
     width: 50px;
     padding-block: 10px;
     position: fixed;
@@ -233,6 +231,7 @@
     a {
       color: white;
       font-size: 20px;
+      border-bottom: 2px solid transparent;
       &:hover {
         transform: scale(1.02);
         border-bottom: 2px solid white;
@@ -284,9 +283,9 @@
             font-weight: 500;
           }
           .product {
-			a {
-				font-size: 18px;
-			}
+            a {
+              font-size: 18px;
+            }
             .modal {
               width: 200px;
               right: 0px;
@@ -318,7 +317,7 @@
             .languagesModal {
               right: 0px;
               width: 200px;
-			  padding-block: 10px;
+              padding-block: 10px;
               .country {
                 h4 {
                   font-size: 18px;
@@ -335,7 +334,7 @@
             align-items: center;
             gap: 5px;
             margin-top: 5px;
-			color: black;
+            color: black;
           }
         }
       }

@@ -10,7 +10,7 @@ const StationMain = () => {
           <h1>Gas Filling Stations</h1>
           <h6>
             Modern and highly efficient gas filling stations for commercial and
-            industrial use from Tork A.Ş.
+            industrial use from Tork Mechatronics A.Ş.
           </h6>
         </div>
       </div>

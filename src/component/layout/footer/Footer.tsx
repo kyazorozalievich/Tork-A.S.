@@ -68,7 +68,7 @@ const Footer = () => {
       </div>
       <hr />
       <div className={scss.footer}>
-        <h6>Copyright © 2025 — TORK A.Ş. All Rights Reserved</h6>
+        <h6>Copyright © 2025 — TORK MECHATRONICS A.Ş. All Rights Reserved</h6>
       </div>
     </section>
   );

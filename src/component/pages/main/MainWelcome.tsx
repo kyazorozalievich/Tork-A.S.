@@ -13,6 +13,7 @@ import akplas from "@/component/assets/images/logo/company-akplas.png";
 import frimpeks from "@/component/assets/images/logo/company-frimpeks.png";
 import schott from "@/component/assets/images/logo/company-schott.svg";
 import spolgas from "@/component/assets/images/logo/company-spolgas.png";
+import torkImg from "@/component/assets/images/about/equipment.jpg";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import { useRouter } from "next/navigation";
@@ -39,16 +40,36 @@ const MainWelcome = () => {
     <section className={scss.MainWelcome}>
       <div className="container">
         <div className={scss.content}>
-          <div className={scss.text}>
-            <h1>Automated machines for Gas Cylinder Refilling</h1>
-            <p>
-              We develop and manufacture high-quality equipment for gas cylinder
-              refilling, ensuring safety, efficiency, and ease of use. Our
-              technologies comply with global standards and are used across
-              various industries. We provide worldwide delivery, guaranteeing
-              the reliability and durability of our products.
-            </p>
-            <div className={scss.btns}>
+          <div className={scss.mainContent}>
+            <h1 className={scss.adaptivText}>
+              Automated machines for Gas Cylinder Refilling
+            </h1>
+            <div className={scss.text}>
+              <h1>Automated machines for Gas Cylinder Refilling</h1>
+              <p>
+                We develop and manufacture high-quality equipment for gas
+                cylinder refilling, ensuring safety, efficiency, and ease of
+                use. Our technologies comply with global standards and are used
+                across various industries. We provide worldwide delivery,
+                guaranteeing the reliability and durability of our products.
+              </p>
+              <Image src={torkImg} alt="" className={scss.adaptivImgMain} />
+              <div className={scss.btns}>
+                <button
+                  className={scss.btn__first}
+                  onClick={() => router.push("/products/filling")}
+                >
+                  Explore Solutions
+                </button>
+                <button
+                  className={scss.btn__second}
+                  onClick={() => router.push("/contact")}
+                >
+                  Contact Us
+                </button>
+              </div>
+            </div>
+            <div className={scss.adaptivBtns}>
               <button
                 className={scss.btn__first}
                 onClick={() => router.push("/products/filling")}
@@ -62,10 +83,10 @@ const MainWelcome = () => {
                 Contact Us
               </button>
             </div>
+            <Image src={torkImg} alt="" className={scss.imgMain} />
           </div>
           <iframe
-            width="560"
-            height="315"
+        
             src="https://www.youtube.com/embed/d4gYjrB2ePc?si=wW9pepetiOyF49kN"
             title="YouTube video player"
             frameBorder="0"

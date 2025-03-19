@@ -3,11 +3,11 @@
   .content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: center;
+    width: 100%;
     .left {
       h5 {
-        color: #00468c;
+        color: #1e90ff;
         font-size: 15px;
         font-weight: 500;
         padding-inline: 10px;
@@ -18,9 +18,7 @@
       }
       h1 {
         font-size: 40px;
-        background: linear-gradient(90deg, #00468c, #1e90ff);
-        -webkit-background-clip: text;
-        color: transparent;
+        color: #1e90ff;
       }
       p {
         font-size: 20px;
@@ -40,7 +38,7 @@
           border-radius: 15px;
           width: 280px;
           border: none;
-          height: 280px;
+          height: 270px;
           background-color: white;
           padding: 20px;
           border: 1px solid white;
@@ -53,12 +51,13 @@
             font-size: 20px;
             color: #333;
             font-weight: 400;
-            padding: 20px 0;
+            padding: 10px 0;
           }
           p {
             font-size: 15px;
             font-weight: 400;
             color: grey;
+            width: 100%;
           }
           .icon {
             border-radius: 10px;
@@ -68,8 +67,8 @@
             justify-content: center;
             width: 50px;
             height: 50px;
-            background-color: skyblue;
-            color: #00468c;
+            background-color: #1e8fff25;
+            color: #1e90ff;
           }
         }
       }
@@ -77,6 +76,9 @@
     .right {
       img {
         border-radius: 20px;
+        object-fit: cover;
+        width: 600px;
+        height: 700px;
       }
     }
   }
@@ -212,7 +214,10 @@
             flex: 0 0 auto;
             width: 280px;
             height: 300px;
+            align-items: start;
+            justify-content: start;
             h6 {
+              text-align: start;
               font-size: 18px;
             }
           }

@@ -32,7 +32,7 @@
         .linkedin {
           &:hover {
             transform: scale(1.05);
-            color: #00468c;
+            color: #1e90ff;
           }
         }
         .youtube {
@@ -65,10 +65,7 @@
       }
       h6 {
         font-size: 1.3rem;
-        margin-bottom: 6px;
-        background: linear-gradient(90deg, #00468c, #1e90ff);
-        -webkit-background-clip: text;
-        color: transparent;
+        color: #1e90ff;
       }
       a {
         font-size: 0.9rem;
@@ -89,7 +86,7 @@
     align-items: center;
     justify-content: center;
     padding: 0 80px;
-    background: linear-gradient(90deg, #00468c, #1e90ff);
+    background: #1e90ff;
     width: 100%;
     height: 80px;
     h6 {

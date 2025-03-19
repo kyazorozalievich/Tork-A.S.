@@ -19,9 +19,8 @@
       padding: 30px;
       h2 {
         font-size: 35px;
-        background: linear-gradient(90deg, #00468c, #1e90ff);
-        -webkit-background-clip: text;
-        color: transparent;
+       
+        color: #1e90ff;
       }
       h6 {
         font-size: 18px;
@@ -36,7 +35,7 @@
         font-weight: bold;
         transition: 0.4s ease-in-out;
         cursor: pointer;
-        background: linear-gradient(90deg, #00468c, #1e90ff);
+        background: #1e90ff;
         color: white;
         border: none;
         box-shadow: 0 4px 10px rgba(0, 70, 140, 0.3);
