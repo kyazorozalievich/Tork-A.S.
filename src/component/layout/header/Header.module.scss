@@ -9,44 +9,6 @@
   z-index: 99;
   box-shadow: 0px 0px 5px gray;
   transition: transform 0.3s ease-in-out;
-
-  &.hidden {
-    transform: translateY(-100%);
-  }
-
-  &.visible {
-    transform: translateY(0);
-  }
-  .contact {
-    background: #1e90ff;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .contactData {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      a {
-        color: white;
-        font-size: 15px;
-        display: flex;
-        align-items: start;
-        gap: 10px;
-        transition: 0.5s ease-in-out;
-        border-bottom: 2px solid transparent;
-        &:hover {
-          transform: scale(1.02);
-          border-bottom: 2px solid white;
-        }
-        span {
-          font-size: 20px;
-        }
-      }
-    }
-  }
   .content {
     display: flex;
     align-items: center;
@@ -184,8 +146,37 @@
     }
   }
 }
-.contactList {
-  opacity: 0;
+.target {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  top: 90px;
+  right: 5%;
+  z-index: 98;
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    a {
+      font-size: 25px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      backdrop-filter: blur(20px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+    }
+    .whatsapp {
+      color: rgb(8, 194, 8);
+    }
+    .email {
+      color: red;
+    }
+  }
 }
 
 @media (max-width: 1024px) {
@@ -337,6 +328,13 @@
             color: black;
           }
         }
+      }
+    }
+  }
+  .target {
+    .icons {
+      a {
+        font-size: 20px;
       }
     }
   }
