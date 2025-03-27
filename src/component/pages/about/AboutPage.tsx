@@ -5,6 +5,7 @@ import AboutJourney from "./AboutJourney";
 import AboutCompany from "./AboutCompany";
 import Consultation from "../products/Consultation";
 import AboutCharacter from "./AboutCharacter";
+import AboutGalery from "./AboutGalery";
 
 const AboutPage = () => {
   return (
@@ -17,6 +18,7 @@ const AboutPage = () => {
       <AboutMain />
       <AboutCharacter />
       <AboutValues />
+      <AboutGalery />
       <AboutCompany />
       <AboutJourney />
       <Consultation />

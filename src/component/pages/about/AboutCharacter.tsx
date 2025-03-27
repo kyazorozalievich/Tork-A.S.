@@ -4,6 +4,8 @@ import equipmentImg from "../../assets/images/about/equipment.jpg";
 import cameraImg from "../../assets/images/about/camera.jpg";
 import windowImg from "../../assets/images/about/window.jpg";
 import boxImg from "../../assets/images/about/box.jpg";
+import documentation from "../../assets/images/about/product.jpg";
+import air from "../../assets/images/about/product2.jpg";
 import Image from "next/image";
 import { MdOutlineChevronLeft, MdOutlineChevronRight } from "react-icons/md";
 import { useRef } from "react";
@@ -39,6 +41,23 @@ const AboutCharacter = () => {
       title: "Monitoring and control systems:",
       description: [
         "The device is equipped with highly durable video surveillance cameras that are resistant to mechanical damage and ensure the safety of users.",
+      ],
+    },
+    {
+      img: documentation,
+      title: "How to use the machine?",
+      description: [
+        "1.Select a cylinder - click on the desired option on the screen.",
+        "2.Pay - use card, cash or mobile app.",
+        "3.Получите баллон — заберите его из выдачного отсека.",
+        "Important: Observe safety precautions!",
+      ],
+    },
+    {
+      img: air,
+      title: "Safe ventilation to prevent gas build-up",
+      description: [
+        "These vents are designed to prevent gas accumulation inside the structure. They allow air circulation, reducing the risk of leakage and possible ignition. Thanks to this ventilation, the gas does not accumulate, but is safely dissipated into the surrounding space.",
       ],
     },
   ];
