@@ -44,9 +44,9 @@ const Footer = () => {
           </div>
           <div className={scss.products}>
             <h6>Products</h6>
-            <Link href="/">Gas cylinder refills</Link>
-            <Link href="/">Gas filling station</Link>
-            <Link href="/">Marking of cylinders</Link>
+            <Link href="/products/filling">LPG cylinder vending machine.</Link>
+            <Link href="/products/station">Gas filling station</Link>
+            <Link href="/products/marking">Marking of cylinders</Link>
           </div>
           <div className={scss.company}>
             <h6>Company</h6>

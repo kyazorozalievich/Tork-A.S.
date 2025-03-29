@@ -5,6 +5,7 @@ import StationSpecifications from "./StationSpecifications";
 import StationMaintenance from "./StationMaintenance";
 import StationServices from "./StationServices";
 import Consultation from "../Consultation";
+import StationMachine from "./StationMachine";
 
 const StationPage = () => {
   return (
@@ -15,6 +16,7 @@ const StationPage = () => {
       }}
     >
       <StationMain />
+      <StationMachine />
       <StationType />
       <StationSpecifications />
       <StationMaintenance />

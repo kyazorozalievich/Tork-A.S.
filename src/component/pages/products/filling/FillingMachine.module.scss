@@ -1,0 +1,132 @@
+.FillingMachine {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    h5 {
+      color: #1e90ff;
+      font-size: 15px;
+      font-weight: 500;
+      padding-inline: 10px;
+      padding-block: 5px;
+      border-radius: 50px;
+      background: #1e8fff1e;
+    }
+    h2 {
+      font-size: 35px;
+      color: #1e90ff;
+      width: 70%;
+      text-align: center;
+    }
+    .detail {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      width: 100%;
+      .detailText {
+        width: 50%;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 30px;
+        p {
+          color: dimgray;
+        }
+        .group {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          gap: 5px;
+        }
+        .machineSt {
+          display: none;
+        }
+      }
+      img {
+        width: 50%;
+        height: 700px;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .FillingMachine {
+    .content {
+      .detail {
+        .detailText {
+          width: 100%;
+          align-items: center;
+          p {
+            text-align: start;
+            width: 100%;
+          }
+          .machineSt {
+            display: block;
+            width: 70%;
+            height: 300px;
+            object-fit: cover;
+          }
+        }
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .FillingMachine {
+    .content {
+      h2 {
+        font-size: 25px;
+        width: 100%;
+      }
+      .detail {
+        .detailText {
+          .machineSt {
+            width: 80%;
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 580px) {
+  .FillingMachine {
+    .content {
+      .detail {
+        .detailText {
+          .machineSt {
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 440px) {
+  .FillingMachine {
+    .content {
+      .detail {
+        .detailText {
+          p {
+            font-size: 15px;
+          }
+          .machineSt {
+            height: 150px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

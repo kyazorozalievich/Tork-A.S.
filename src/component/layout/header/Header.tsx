@@ -39,7 +39,7 @@ const Header = () => {
 
   const products = [
     {
-      title: "Gas cylinder filling",
+      title: "LPG cylinder vending machine.",
       href: "/products/filling",
     },
     {
@@ -78,7 +78,6 @@ const Header = () => {
       title: "Spain",
     },
   ];
-
 
   return (
     <>

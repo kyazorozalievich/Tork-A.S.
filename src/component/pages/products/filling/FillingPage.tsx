@@ -3,6 +3,7 @@ import FillingMain from "./FillingMain";
 import FillingAdvantages from "./FillingAdvantages";
 import FillingEquipment from "./FillingEquipment";
 import Consultation from "../Consultation";
+import FillingMachine from "./FillingMachine";
 
 const FillingPage = () => {
   return (
@@ -13,6 +14,7 @@ const FillingPage = () => {
       }}
     >
       <FillingMain />
+      <FillingMachine />
       <FillingAdvantages />
       <FillingEquipment />
       <Consultation />
