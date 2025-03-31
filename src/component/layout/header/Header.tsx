@@ -2,7 +2,7 @@
 import Link from "next/link";
 import scss from "./Header.module.scss";
 import { FaAngleDown } from "react-icons/fa";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { TbWorld } from "react-icons/tb";
 import Image from "next/image";
@@ -78,6 +78,32 @@ const Header = () => {
       title: "Spain",
     },
   ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (burger) setBurger(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [burger]);
+
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        burger &&
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node)
+      ) {
+        setBurger(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [burger]);
 
   return (
     <>
