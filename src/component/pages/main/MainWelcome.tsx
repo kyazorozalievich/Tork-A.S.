@@ -53,7 +53,6 @@ const MainWelcome = () => {
                   <div className={scss.group}>
                     <p>✅ Safety & durability:</p>
                     <ul>
-                      <li>Bulletproof chamber</li>
                       <li>Impact-resistant aviation glass</li>
                       <li>Full ventilation</li>
                       <li>Fireproof body</li>
