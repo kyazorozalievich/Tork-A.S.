@@ -1,8 +1,10 @@
 "use client";
 import scss from "./FillingMachine.module.scss";
-import machien from "../../../assets/images/product/machine.png";
+import machine from "../../../assets/images/product/machine.png";
 import machineTop from "../../../assets/images/product/machineTop.png";
 import machineBottom from "../../../assets/images/product/machineBottom.png";
+import machine3 from "../../../assets/images/product/machine3.png";
+import machine4 from "../../../assets/images/product/machine4.png";
 import Image from "next/image";
 
 const FillingMachine = () => {
@@ -62,7 +64,50 @@ const FillingMachine = () => {
                 convenience, and complete digital transparency for businesses.
               </p>
             </div>
-            <Image src={machien} alt="" />
+            <div className={scss.images}>
+              <Image src={machine} alt="" />
+            </div>
+          </div>
+          <hr />
+          <div className={scss.detail}>
+            <div className={scss.detailText}>
+              <Image src={machine3} alt="" className={scss.machineSt} />
+              <div className={scss.group}>
+                <p>✅Capacity: Up to 39 cylinders</p>
+                <p>
+                  ✅ Mechanism: Static storage with front dispensing system{" "}
+                </p>
+                <p>✅ Cylinder Types: Standard domestic LPG cylinders</p>
+                <p>
+                  ✅ Monitoring: Cloud-based system shows inventory and usage
+                  data{" "}
+                </p>
+                <p>
+                  ✅ Safety: Reinforced structure, gas leak sensors, integrated
+                  cameras
+                </p>
+                <p>
+                  ✅ Interface: Simple control panel with contactless payment
+                  option
+                </p>
+                <p>
+                  ✅ Installation: Perfect for small shops, villages, campsites,
+                  fuel stations, and remote areas
+                </p>
+              </div>
+              <Image src={machine4} alt="" className={scss.machineSt} />
+              <div className={scss.group}>
+                <p>✅ Compact size – fits in space-limited environments</p>
+                <p>✅ Low power consumption .</p>
+                <p>
+                  ✅ Cost-effective solution for starting sales or serving
+                  moderate demand locations
+                </p>
+              </div>
+            </div>
+            <div className={scss.images}>
+              <Image src={machine4} alt="" className={scss.mchnImg} />
+            </div>
           </div>
         </div>
       </div>

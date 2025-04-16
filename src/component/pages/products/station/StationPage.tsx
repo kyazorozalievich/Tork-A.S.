@@ -6,6 +6,7 @@ import StationMaintenance from "./StationMaintenance";
 import StationServices from "./StationServices";
 import Consultation from "../Consultation";
 import StationMachine from "./StationMachine";
+import StationSafety from "./StationSafety";
 
 const StationPage = () => {
   return (
@@ -17,10 +18,11 @@ const StationPage = () => {
     >
       <StationMain />
       <StationMachine />
-      <StationType />
-      <StationSpecifications />
-      <StationMaintenance />
-      <StationServices />
+      <StationSafety />
+      {/* <StationType /> */}
+      {/* <StationSpecifications /> */}
+      {/* <StationMaintenance /> */}
+      {/* <StationServices /> */}
       <Consultation />
     </div>
   );

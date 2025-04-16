@@ -1,7 +1,7 @@
 import React from "react";
 import AboutMain from "./AboutMain";
 import AboutValues from "./AboutValues";
-import AboutJourney from "./AboutJourney";
+// import AboutJourney from "./AboutJourney";
 import AboutCompany from "./AboutCompany";
 import Consultation from "../products/Consultation";
 import AboutCharacter from "./AboutCharacter";
@@ -17,10 +17,10 @@ const AboutPage = () => {
     >
       <AboutMain />
       <AboutCharacter />
-      <AboutValues />
       <AboutGalery />
-      <AboutCompany />
-      <AboutJourney />
+      {/* <AboutCompany /> */}
+      <AboutValues />
+      {/* <AboutJourney /> */}
       <Consultation />
     </div>
   );

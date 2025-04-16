@@ -19,21 +19,25 @@ const AboutMain = () => {
               <h1>Leading the Gas Industry Forward</h1>
               <div className={scss.description}>
                 <p>
-                  Tork Mechatronics A.Ş. is a leading manufacturer of automatic
-                  machines for filling gas cylinders. We create reliable,
-                  high-precision, and safe systems that ensure efficient and
-                  accident-free filling of cylinders of various capacities.
+                  Founded in 2019, Tork Mekatronik specializes in custom machine
+                  manufacturing, test systems, engineering design, and
+                  problem-solving. Our mission is to deliver innovative,
+                  high-quality solutions that meet our clients’ unique needs and
+                  help them achieve greater efficiency and success.
                 </p>
                 <p>
-                  Founded in 2005, we've grown from a small engineering firm to
-                  an international player in the gas cylinder automation
-                  industry. Our commitment to innovation and safety has made us
-                  a trusted partner for companies worldwide.
+                  Custom Machine Manufacturing and Test Systems We design and
+                  build custom machinery and test systems tailored to your
+                  specific needs. Our skilled engineers and technicians ensure
+                  each solution meets the highest standards of quality and
+                  performance. We are a trusted partner for leading companies
+                  across various industries.
                 </p>
                 <p>
-                  We specialize in developing comprehensive solutions that
-                  optimize the entire gas cylinder filling process, from initial
-                  setup to quality control and distribution.
+                  Comprehensive Testing Systems Our testing systems ensure
+                  product quality and performance. We offer solutions for
+                  functional, endurance, stress, and environmental testing,
+                  using advanced technologies for precise and reliable results.
                 </p>
               </div>
             </div>

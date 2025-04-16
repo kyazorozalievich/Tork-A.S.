@@ -47,11 +47,24 @@
           display: none;
         }
       }
-      img {
+      .images {
         width: 50%;
-        height: 700px;
-        object-fit: contain;
+        height: auto;
+        img {
+          width: 100%;
+          height: 700px;
+          object-fit: contain;
+        }
+        .mchnImg {
+          width: 100%;
+          height: 350px;
+          object-fit: contain;
+          transform: rotate(5deg);
+        }
       }
+    }
+    hr {
+      width: 100%;
     }
   }
 }
@@ -60,9 +73,10 @@
   .FillingMachine {
     .content {
       .detail {
+        align-items: start;
         .detailText {
           width: 100%;
-          align-items: center;
+          align-items: start;
           p {
             text-align: start;
             width: 100%;
@@ -71,10 +85,10 @@
             display: block;
             width: 70%;
             height: 300px;
-            object-fit: cover;
+            object-fit: contain;
           }
         }
-        img {
+        .images {
           display: none;
         }
       }
@@ -123,7 +137,6 @@
           }
           .machineSt {
             height: 150px;
-            object-fit: cover;
           }
         }
       }

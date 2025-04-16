@@ -1,6 +1,6 @@
 "use client";
+import scss from "./ReferencePartners.module.scss";
 import Image from "next/image";
-import scss from "./AboutCompany.module.scss";
 import arcelik from "@/component/assets/images/logo/company-arcelik.png";
 import midea from "@/component/assets/images/logo/company-midea.png";
 import pas from "@/component/assets/images/logo/company-pas.png";
@@ -15,7 +15,7 @@ import frimpeks from "@/component/assets/images/logo/company-frimpeks.png";
 import schott from "@/component/assets/images/logo/company-schott.svg";
 import spolgas from "@/component/assets/images/logo/company-spolgas.png";
 
-const AboutCompany = () => {
+const ReferencePartners = () => {
   const dataLogo = [
     arcelik,
     midea,
@@ -33,7 +33,7 @@ const AboutCompany = () => {
   ];
 
   return (
-    <section className={scss.AboutCompany}>
+    <section className={scss.ReferencePartners}>
       <div className="container">
         <div className={scss.content}>
           <h5>PARTNERS</h5>
@@ -61,4 +61,4 @@ const AboutCompany = () => {
   );
 };
 
-export default AboutCompany;
+export default ReferencePartners;

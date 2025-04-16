@@ -15,22 +15,29 @@ const MainEquipment = () => {
     {
       img: img1,
       icon: <CiTimer />,
-      title: "Automatic Refilling Stations",
-      description: "Precise and fast systems with advanced control modules.",
+      title:
+        "LPG Cylinder Vending Machine A Fully Automated System – Operates 24/7 Without Breaks or Days Off!",
+      description: [
+        "• Sell Anytime, Anywhere",
+        "• Real-Time Monitoring & Analytics",
+        "• Sales of Various Cylinder Types",
+      ],
     },
     {
       img: img2,
       icon: <AiOutlineSafety />,
       title: "Testing & Quality Inspection",
-      description:
+      description: [
         "Equipment for checking tightness, pressure, and cylinder safety.",
+      ],
     },
     {
       img: img3,
       icon: <TbTruckDelivery />,
       title: "Transport & Distribution Systems",
-      description:
+      description: [
         "Solutions for convenient logistics and storage of gas containers.",
+      ],
     },
   ];
 
@@ -58,13 +65,14 @@ const MainEquipment = () => {
     <section className={scss.MainEquipment}>
       <div className="container">
         <div className={scss.content}>
-          <h1>Advanced Solutions for Gas Refilling</h1>
+          <h1>
+            Sell LPG Cylinders 24/7 with the LPG GAS CYLINDER VENDING AUTOMAT
+            MACHINE – A Smart Solution for Your Business!
+          </h1>
           <p>
-            Explore our range of modern and safe equipment designed for
-            convenient and efficient gas cylinder refilling. We offer reliable
-            solutions that help automate the process, reduce gas losses and
-            improve safety. Our equipment meets high quality standards and
-            ensures stable and uninterrupted operation.
+            The era of traditional gas cylinder sales is over. With our
+            automated vending machine, you get more than just equipment—you get
+            a fully intelligent system that works non-stop, day and night.
           </p>
           <div className={scss.cards} ref={equipmentRef}>
             <button className={scss.left} onClick={scrollLeft}>
@@ -80,7 +88,9 @@ const MainEquipment = () => {
                     <span>{el.icon}</span>
                     <h4>{el.title}</h4>
                   </div>
-                  <p>{el.description}</p>
+                  {el.description.map((desc, index) => (
+                    <p key={index}>{desc}</p>
+                  ))}
                 </div>
               </div>
             ))}

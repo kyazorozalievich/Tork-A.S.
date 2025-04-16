@@ -9,7 +9,7 @@
     gap: 20px;
     h2 {
       font-size: 35px;
-   
+
       color: #1e90ff;
     }
     h6 {
@@ -20,20 +20,20 @@
     }
     .equipmentsBlocks {
       display: flex;
-      align-items: center;
+      align-items: start;
       justify-content: space-between;
       width: 100%;
       margin-top: 40px;
       .equipmentBlock {
         width: 47%;
-        height: 720px;
+        height: auto;
         padding: 30px;
         background: white;
         border-radius: 10px;
         display: flex;
         align-items: start;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
         transition: 0.5s ease-in-out;
         border: 1px solid transparent;
         &:hover {
@@ -42,19 +42,24 @@
         }
         img {
           width: 100%;
-          height: 300px;
+          height: 400px;
           border-radius: 10px;
+          object-fit: contain;
         }
         h3 {
           font-size: 20px;
           font-weight: 500;
           text-align: start;
         }
+        h4 {
+          font-size: 18px;
+          font-weight: 500;
+        }
         p {
           text-align: start;
           font-size: 18px;
           color: dimgray;
-          margin-bottom: 20px;
+          margin-bottom: 10px;
         }
         a {
           display: flex;
@@ -85,20 +90,6 @@
   }
 }
 
-@media (max-width: 930px) {
-  .FillingEquipment {
-    .content {
-      .equipmentsBlocks {
-        .equipmentBlock {
-          padding: 20px;
-          img {
-            height: 200px;
-          }
-        }
-      }
-    }
-  }
-}
 @media (max-width: 768px) {
   .FillingEquipment {
     .content {
@@ -111,73 +102,27 @@
         width: 100%;
       }
       .equipmentsBlocks {
-        margin-top: 20px;
-
-        .equipmentBlock {
-          padding: 20px;
-          gap: 20px;
-          width: 48%;
-          height: 650px;
-          h3 {
-            font-size: 18px;
-          }
-          p {
-            font-size: 13px;
-            margin-bottom: 0;
-          }
-          a {
-            span {
-              font-size: 13px;
-            }
-            font-size: 15px;
-          }
-
-          button {
-            font-size: 15px;
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 590px) {
-  .FillingEquipment {
-    padding-block: 0;
-    .content {
-      .equipmentsBlocks {
         flex-direction: column;
         gap: 20px;
         .equipmentBlock {
-          padding: 20px;
-          gap: 20px;
           width: 100%;
-          height: 550px;
-          img {
-            object-fit: cover;
+          h3 {
+            font-size: 18px;
+          }
+          h4 {
+            font-size: 15px;
+          }
+          p {
+            font-size: 15px;
+          }
+          a {
+            font-size: 15px;
+            span {
+              font-size: 15px;
+            }
           }
           button {
-            margin-top: 0;
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 400px) {
-  .FillingEquipment {
-    height: auto;
-    .content {
-      .equipmentsBlocks {
-        gap: 20px;
-        .equipmentBlock {
-          padding: 20px;
-          gap: 20px;
-          height: 420px;
-          img {
-            display: none;
-          }
-          button {
-            margin-top: 0;
+            font-size: 15px;
           }
         }
       }

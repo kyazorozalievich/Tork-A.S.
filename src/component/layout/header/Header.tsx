@@ -13,7 +13,7 @@ import italy from "../../assets/images/header/flag-Italy.webp";
 import arabic from "../../assets/images/header/flag-Arabic.png";
 import spain from "../../assets/images/header/flag-Spain.png";
 import logo from "../../assets/images/logo.png";
-import { MdOutlineLocationOn, MdOutlineMail } from "react-icons/md";
+import { MdOutlineMail } from "react-icons/md";
 import { RiMenu3Fill, RiWhatsappFill, RiWhatsappLine } from "react-icons/ri";
 import { LuPhone } from "react-icons/lu";
 import { GrMapLocation } from "react-icons/gr";
@@ -45,10 +45,6 @@ const Header = () => {
     {
       title: "Gas filling station",
       href: "/products/station",
-    },
-    {
-      title: "Marking of cylinders.",
-      href: "/products/marking",
     },
   ];
 
@@ -153,6 +149,12 @@ const Header = () => {
                 className={pathname === "/about" ? scss.active : scss.link}
               >
                 About
+              </Link>
+              <Link
+                href="/reference"
+                className={pathname === "/reference" ? scss.active : scss.link}
+              >
+                Reference
               </Link>
               <Link
                 href="/contact"

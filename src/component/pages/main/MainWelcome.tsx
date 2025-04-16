@@ -43,7 +43,7 @@ const MainWelcome = () => {
           <div className={scss.content}>
             <div className={scss.mainContent}>
               <div className={scss.text}>
-                <h1>LPG Gas Cylinder Machine (48+48) – Innovative System</h1>
+                <h1>LPG Gas Cylinder Vending Machine (48+48) – Innovative System</h1>
                 <div className={scss.group}>
                   <p>✅ Holds 96 cylinders</p>
                   <p>✅ Fully automated</p>

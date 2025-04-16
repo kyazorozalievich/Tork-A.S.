@@ -19,37 +19,37 @@ const FillingAdvantages = () => {
       icon: <AiOutlineSafety />,
       title: "Safety",
       description:
-        "All equipment complies with the most stringent safety standards when working with gas under pressure",
+        "Certified safety systems for 24/7 LPG vending Our vending machines meet the highest international standards for safe gas cylinder handling and automated distribution.",
     },
     {
       icon: <GrThreeDEffects />,
       title: "Efficiency",
       description:
-        "High productivity with minimal energy consumption and optimal use of resources",
+        "Maximum sales with minimal operational cost Sell gas cylinders with low energy consumption, reduced manpower, and optimized system performance.",
     },
     {
       icon: <IoStarOutline />,
       title: "Reliability",
       description:
-        "Fault-tolerant systems with backup components and long service life",
+        "Uninterrupted operation with backup systems Designed for continuous use with durable components, ensuring long-term performance and minimal downtime.",
     },
     {
       icon: <TbAutomation />,
       title: "Automation",
       description:
-        "Minimal operator involvement in the filling process thanks to automated systems",
+        "Fully automated sales & tracking Customers buy cylinders without staff involvement. QR-code tracking allows full visibility of sales and inventory in real time.",
     },
     {
       icon: <MdSystemUpdateAlt />,
       title: "Scalability",
       description:
-        "Possibility to expand the system with increased production volumes without replacing equipment",
+        "Easily expand your LPG vending network Add more machines as your business grows—no need to upgrade existing infrastructure.",
     },
     {
       icon: <FiPhoneCall />,
       title: "Service Support",
       description:
-        "24/7 technical support and quick response to any customer requests",
+        "24/7 remote support and system monitoring Enjoy around-the-clock technical support, real-time machine status updates, and fast troubleshooting  from  any where.",
     },
   ];
 
@@ -70,7 +70,7 @@ const FillingAdvantages = () => {
         left: advantagesRef.current.scrollLeft + 200,
         behavior: "smooth",
       });
-    } 
+    }
   };
 
   return (
@@ -93,7 +93,7 @@ const FillingAdvantages = () => {
               <MdOutlineChevronRight />
             </button>
           </div>
-        </div>
+        </div> 
       </div>
     </section>
   );
