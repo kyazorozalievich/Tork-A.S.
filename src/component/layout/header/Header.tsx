@@ -228,6 +228,15 @@ const Header = () => {
                     About
                   </Link>
                   <Link
+                    href="/reference"
+                    className={
+                      pathname === "/reference" ? scss.active : scss.link
+                    }
+                    onClick={() => setBurger(false)}
+                  >
+                    Reference
+                  </Link>
+                  <Link
                     href="/contact"
                     className={
                       pathname === "/contact" ? scss.active : scss.link
