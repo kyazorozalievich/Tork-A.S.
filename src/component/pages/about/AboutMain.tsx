@@ -16,7 +16,7 @@ const AboutMain = () => {
           <div className={scss.aboutContent}>
             <div className={scss.aboutStory}>
               <h5>OUR STORY</h5>
-              <h1>Leading the Gas Industry Forward</h1>
+              <h1>About Us</h1>
               <div className={scss.description}>
                 <p>
                   Founded in 2019, Tork Mekatronik specializes in custom machine
@@ -45,7 +45,7 @@ const AboutMain = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section> 
   );
 };
 
