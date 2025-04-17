@@ -6,7 +6,7 @@ import { useRef } from "react";
 import { MdOutlineChevronLeft, MdOutlineChevronRight } from "react-icons/md";
 import { AiOutlineSafety } from "react-icons/ai";
 import { TbTruckDelivery } from "react-icons/tb";
-import img1 from "../../assets/images/about/aboutHistoryImg.jpg";
+import img1 from "../../assets/images/about/equipment.jpg";
 import img2 from "../../assets/images/home/equipmentTest.jpg";
 import img3 from "../../assets/images/home/equipmentTransport.jpg";
 

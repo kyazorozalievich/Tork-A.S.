@@ -13,7 +13,8 @@ import akplas from "@/component/assets/images/logo/company-akplas.png";
 import frimpeks from "@/component/assets/images/logo/company-frimpeks.png";
 import schott from "@/component/assets/images/logo/company-schott.svg";
 import spolgas from "@/component/assets/images/logo/company-spolgas.png";
-import torkImg from "@/component/assets/images/about/equipment.jpg";
+import torkImg from "@/component/assets/images/about/aboutHistoryImg.jpg";
+
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import { useRouter } from "next/navigation";
@@ -43,7 +44,9 @@ const MainWelcome = () => {
           <div className={scss.content}>
             <div className={scss.mainContent}>
               <div className={scss.text}>
-                <h1>LPG Gas Cylinder Vending Machine (48+48) – Innovative System</h1>
+                <h1>
+                  LPG Gas Cylinder Vending Machine (48+48) – Innovative System
+                </h1>
                 <div className={scss.group}>
                   <p>✅ Holds 96 cylinders</p>
                   <p>✅ Fully automated</p>
