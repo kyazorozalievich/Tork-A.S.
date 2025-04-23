@@ -1,8 +1,6 @@
 import React from "react";
 import AboutMain from "./AboutMain";
 import AboutValues from "./AboutValues";
-// import AboutJourney from "./AboutJourney";
-import AboutCompany from "./AboutCompany";
 import Consultation from "../products/Consultation";
 import AboutCharacter from "./AboutCharacter";
 import AboutGalery from "./AboutGalery";
@@ -18,9 +16,7 @@ const AboutPage = () => {
       <AboutMain />
       <AboutCharacter />
       <AboutGalery />
-      {/* <AboutCompany /> */}
       <AboutValues />
-      {/* <AboutJourney /> */}
       <Consultation />
     </div>
   );

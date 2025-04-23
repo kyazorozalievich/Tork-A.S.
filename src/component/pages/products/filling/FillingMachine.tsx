@@ -24,7 +24,7 @@ const FillingMachine = () => {
                 </p>
                 <p>✅ Fully automated system – convenient for customers.</p>
                 <p>
-                  ✅ 24/7 customer support – built-in button for instant
+                  ✅ 24/7 customer support – for instant
                   operator assistance.
                 </p>
               </div>

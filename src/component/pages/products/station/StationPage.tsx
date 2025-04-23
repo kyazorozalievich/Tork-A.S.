@@ -1,9 +1,5 @@
 import React from "react";
 import StationMain from "./StationMain";
-import StationType from "./StationType";
-import StationSpecifications from "./StationSpecifications";
-import StationMaintenance from "./StationMaintenance";
-import StationServices from "./StationServices";
 import Consultation from "../Consultation";
 import StationMachine from "./StationMachine";
 import StationSafety from "./StationSafety";
@@ -19,10 +15,6 @@ const StationPage = () => {
       <StationMain />
       <StationMachine />
       <StationSafety />
-      {/* <StationType /> */}
-      {/* <StationSpecifications /> */}
-      {/* <StationMaintenance /> */}
-      {/* <StationServices /> */}
       <Consultation />
     </div>
   );
