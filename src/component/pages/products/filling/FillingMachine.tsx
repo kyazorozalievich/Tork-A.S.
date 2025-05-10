@@ -31,7 +31,6 @@ const FillingMachine = () => {
               <Image src={machineTop} alt="" className={scss.machineSt} />
               <div className={scss.group}>
                 <p>✅ Durable and secure materials:</p>
-                <p>✅ Bulletproof chamber for maximum security.</p>
                 <p>✅ Special aviation-grade glass, highly impact-resistant.</p>
                 <p>
                   ✅ Breathable walls on all sides for proper air circulation.
