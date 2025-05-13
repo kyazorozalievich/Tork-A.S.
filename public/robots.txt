@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://lpgvending.com
+
+# Sitemaps
+Sitemap: https://lpgvending.com/sitemap.xml
