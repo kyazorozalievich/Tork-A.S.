@@ -57,7 +57,7 @@ const Footer = () => {
           <div className={scss.contact}>
             <h6>Contact</h6>
             <Link href="https://www.google.com/maps/place/TORK+MEKATRON%C4%B0K+A.%C5%9E./@41.2211855,27.9158235,17z/data=!3m1!4b1!4m6!3m5!1s0x14b4df443e63b8db:0x9643806ad20288db!8m2!3d41.2211855!4d27.9183984!16s%2Fg%2F11j5cb5g5s?hl=ru&entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoASAFQAw%3D%3D">
-              Address: Velikoy OSB 2. Cd. No: 2/4-F
+              Address: Çerkezköy / Turkiye
             </Link>
             <Link href="mailto:gulia@torkas.com">email: gulia@torkas.com</Link>
             <Link href="https://wa.me/905444077787">

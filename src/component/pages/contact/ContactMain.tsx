@@ -40,8 +40,8 @@ const ContactMain = () => {
     {
       icon: <IoLocationOutline />,
       title: "Address",
-      data1: "Velikoy OSB 2. Cd. No: 2/4-F",
-      data2: "Cerkezkoy 59501, Turkiye",
+      data1: "Çerkezköy / Turkiye",
+      data2: "Çerkezköy / Turkiye",
       href1:
         "https://www.google.com/maps/place/TORK+MEKATRON%C4%B0K+A.%C5%9E./@41.2211855,27.9158235,17z/data=!3m1!4b1!4m6!3m5!1s0x14b4df443e63b8db:0x9643806ad20288db!8m2!3d41.2211855!4d27.9183984!16s%2Fg%2F11j5cb5g5s?hl=ru&entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoASAFQAw%3D%3D",
       href2:
