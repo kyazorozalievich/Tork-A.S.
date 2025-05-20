@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.scss";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: {
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/favicon.ico", 
+    icon: "/favicon.ico",
   },
 };
 
@@ -46,6 +47,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Google tag (gtag.js) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LTGB3W0QZC"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LTGB3W0QZC');
+            `,
+          }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

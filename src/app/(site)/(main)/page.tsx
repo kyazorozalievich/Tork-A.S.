@@ -3,30 +3,31 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Gas Cylinder Filling Equipment | Gas Filling Machines",
+  title: "LPG Vending Machines | Automated Gas Cylinder Filling Systems",
   description:
-    "Explore advanced gas cylinder filling machines and equipment designed for safe and efficient gas refueling. Discover reliable technology and solutions for LPG, propane, and industrial gas systems.",
+    "Discover innovative LPG vending machines for automated gas cylinder refilling. Designed for safety, efficiency, and 24/7 self-service gas distribution. Ideal for commercial and industrial use.",
   keywords: [
-    "gas filling machines",
-    "gas cylinder equipment",
-    "LPG filling",
-    "propane gas refueling",
-    "industrial gas solutions",
-    "gas refilling systems",
-    "automatic gas dispensers",
+    "LPG vending machines",
+    "automated gas refilling",
+    "self-service gas stations",
+    "LPG dispenser",
+    "gas cylinder vending",
+    "24/7 gas refilling",
+    "smart gas filling solutions",
+    "LPG automation",
   ],
   openGraph: {
-    title: "Gas Cylinder Filling Equipment | Gas Filling Machines",
+    title: "LPG Vending Machines | Automated Gas Cylinder Filling Systems",
     description:
-      "Discover cutting-edge gas cylinder filling machines for LPG, propane, and industrial applications. Reliable, efficient, and safe refueling technology.",
+      "Explore advanced LPG vending machines for fully automated, 24/7 gas cylinder refueling. Safe, efficient, and perfect for modern gas distribution.",
     url: "https://lpgvending.com",
-    siteName: "Gas Filling Systems",
+    siteName: "LPG Vending Systems",
     images: [
       {
-        url: "https://torkas.com/wp-content/uploads/2024/05/cropped-Tork_LOGO_kisa.jpg", 
+        url: "https://torkas.com/wp-content/uploads/2024/05/cropped-Tork_LOGO_kisa.jpg",
         width: 1200,
         height: 630,
-        alt: "Gas filling machine in operation",
+        alt: "Automated LPG vending machine",
       },
     ],
     locale: "en_US",
